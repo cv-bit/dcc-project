@@ -17,3 +17,6 @@ Phase 1
 8. interact with npc
 9. manage player items
 10. complete simple quests
+
+Progress
+I have came up with a concept and have started creating all files
