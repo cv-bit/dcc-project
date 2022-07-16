@@ -21,3 +21,7 @@ Phase 1
 Progress
 
 I have came up with a concept and have started creating all files
+
+Idea
+
+this game will be a text based rpg taking inspiration from DnD and DCC
