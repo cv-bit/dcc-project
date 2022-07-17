@@ -1,31 +1,31 @@
 
-const Enemy = {
+class Enemy {
 
-    name: '',
+    name= ''
 
-    type: '',
+    type= ''
 
-    difficulty: '',
+    difficulty= ''
 
-    stats: {
+    stats= {
         hp: 0,
         power: 0,
         magic: 0,
         speed: 0,
         stamina: 5,
-    },
+    }
 
-    skills: [
+    skills= [
 
-    ],
+    ]
 
-    abilities: [
+    abilities= [
 
-    ],
+    ]
 
-    loot: [
+    loot= [
 
-    ],
+    ]
     
 }
 

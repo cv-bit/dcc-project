@@ -21,6 +21,7 @@ Phase 1
 Progress
 
 I have came up with a concept and have started creating all files
+started editing files made player enemy and npc classes
 
 Idea
 

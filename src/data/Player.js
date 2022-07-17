@@ -1,10 +1,10 @@
 
 
-const Player = {
+class Player {
 
-    name: "",
+    name= ""
 
-    stats: {
+    stats= {
         hp: 0,
         power: 0,
         magic: 0,
@@ -12,25 +12,25 @@ const Player = {
         stamina: 5,
         luck: 0,
         xp: 0,
-    },
+    }
 
-    skills: [
+    skills= [
 
-    ],
+    ]
 
-    abilities: [
+    abilities= [
 
-    ],
+    ]
 
-    items: [
+    items= [
 
-    ],
+    ]
 
-    log: [
+    log= [
 
-    ],
+    ]
 
-    gold: 0,
+    gold= 0
 }
 
 export default Player

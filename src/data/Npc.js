@@ -1,33 +1,33 @@
 
-const NPC = {
+class NPC  {
 
-    id: 0,
+    id= 0
 
-    name: '',
+    name= ''
 
-    type: '',
+    type= ''
 
-    dialog: [
+    dialog= [
 
-    ],
+    ]
 
-    stats: {
+    stats= {
 
-    },
+    }
 
-    skills: [
+    skills= [
 
-    ],
+    ]
 
-    abilities: [
+    abilities= [
 
-    ],
+    ]
 
-    items: [
+    items= [
 
-    ],
+    ]
 
-    gold: 0
+    gold= 0
     
 }
 
