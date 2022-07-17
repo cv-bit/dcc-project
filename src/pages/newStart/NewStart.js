@@ -6,8 +6,11 @@ import './newStart.css'
 const NewStart = () => {
   return (
     <div className='newStart-container min-width-100 min-height-100 flex-center-center'>
-      <p>new game dialog</p>
-      <Link className='create-party-link' to="/beginning" >create a party</Link>
+      <div className='text-center'>
+        <h2>new game dialog</h2>
+        <p>here you will be able to create your party to adventure with</p>
+        <Link className='create-party-link' to="/beginning" >create a party</Link>
+      </div>
     </div>
   )
 }
