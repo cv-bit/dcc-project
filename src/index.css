@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--primary-text-color);
   margin: 5px;
 }
 
@@ -30,13 +30,13 @@ button {
 
 /* css variables */
 * {
-  --primary-color: aliceblue;
+  --primary-color: #333;
   --primary-btn-color: blue;
-  --primary-text-color: #000;
+  --primary-text-color: #fff;
 
-  --secondary-color: red;
-  --secondary-btn-color: orange;
-  --secondary-text-color: #fff;
+  --secondary-color: #f2f3f4;
+  --secondary-btn-color: red;
+  --secondary-text-color: #000;
 }
 
 /* highly used css styles */

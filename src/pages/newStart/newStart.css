@@ -1,0 +1,11 @@
+.newStart-container {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.create-party-link {
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+}

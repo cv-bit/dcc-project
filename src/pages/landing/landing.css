@@ -4,5 +4,5 @@
 
 .landing-container button {
     background-color: var(--secondary-btn-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
