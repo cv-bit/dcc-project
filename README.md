@@ -23,6 +23,7 @@ Progress
 I have came up with a concept and have started creating all files
 started editing files made player enemy and npc classes also made changes to dice roller
 adding story cards going to hero cards and hero container and random hero selector for creating party
+published site on netlify
 
 Idea
 
