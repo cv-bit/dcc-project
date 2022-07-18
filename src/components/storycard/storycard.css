@@ -1,0 +1,13 @@
+.storycard-container {
+    width: 200px;
+    height: 200px;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.storycard-container:hover {
+    transform: scale(102%);
+}

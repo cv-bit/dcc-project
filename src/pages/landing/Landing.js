@@ -7,10 +7,14 @@ import './landing.css'
 const Landing = () => {
   return (
     <div className='landing-container min-height-100 min-width-100 flex-center-center'>
-      <button onClick={() => diceRoller(6)}>d6</button>
-      <button onClick={() => diceRoller(20)}>d20</button>
-      
-      <Link to="/start">start game</Link>
+      <div className='text-center'>
+        <h2>Welcome</h2>
+        <p>this page will be a welcome page and maybe have a mini game</p>
+        <button onClick={() => diceRoller(6)}>d6</button>
+        <button onClick={() => diceRoller(20)}>d20</button>
+        
+        <Link to="/start">start game</Link>
+      </div>
     </div>
   )
 }
