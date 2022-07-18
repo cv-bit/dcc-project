@@ -37,6 +37,8 @@ button {
   --secondary-color: #f2f3f4;
   --secondary-btn-color: red;
   --secondary-text-color: #000;
+
+  --green-color: #0bda51;
 }
 
 /* highly used css styles */
@@ -79,11 +81,19 @@ button {
 }
 
 .min-width-100 {
-  width: 100vw;
+  min-width: 100vw;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .min-height-100 {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.height-100 {
+  height: 100%;
 }
 
 .text-center {
