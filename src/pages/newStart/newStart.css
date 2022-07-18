@@ -3,18 +3,20 @@
     height: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: 10px;
 }
 
 .newStart-hero-container {
-    width: 100%;
-    height: 600px;
     border: 4px solid var(--primary-btn-color);
     padding: 10px;
-    margin: 10px;
 }
 
 .newStart-hero-container h2 {
     width: 100%;
+}
+
+.newStart-continue-container {
+    min-height: 250px;
 }
 
 .create-party-link {

@@ -16,7 +16,7 @@ const NewStart = () => {
         <HeroCard />
         <HeroCard />
       </div>
-      <div className='text-center height-100'>
+      <div className='newStart-continue-container text-center height-100'>
         <h2>new game dialog</h2>
         <p>here you will be able to create your party to adventure with</p>
         <Link className='create-party-link' to="/beginning" >create a party</Link>
