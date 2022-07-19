@@ -18,6 +18,10 @@ class HeroClass {
 
     Token=""
 
+    image= ""
+
+    focus= ""
+
     skills= [
 
     ]
