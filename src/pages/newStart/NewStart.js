@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import HeroList from '../../data/hero/HeroList'
 import HeroCard from '../../components/herocard/HeroCard'
 
 import './newStart.css'
@@ -14,12 +15,11 @@ const NewStart = () => {
       </div>
       <div className='newStart-hero-container flex-center-center wrap text-center'>
         <h2>Pick your heros</h2>
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
-        <HeroCard />
+        {
+          HeroList.map((hero, key) => {
+            return <HeroCard hero={hero} key={key} />
+          })
+        }
       </div>
     </div>
   )

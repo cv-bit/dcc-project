@@ -1,6 +1,6 @@
 
 
-class Player {
+class HeroClass {
 
     name= ""
 
@@ -13,6 +13,10 @@ class Player {
         luck: 0,
         xp: 0,
     }
+
+    occupation= ""
+
+    Token=""
 
     skills= [
 
@@ -33,4 +37,4 @@ class Player {
     gold= 0
 }
 
-export default Player
+export default HeroClass
