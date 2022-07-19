@@ -3,8 +3,13 @@ import React from 'react'
 import './herocard.css'
 
 const HeroCard = ({hero}) => {
+
+    const chooseHero = (hero) => {
+        alert('you choose ' + hero.name)
+    }
+
     return (
-        <div className='herocard-container flex-center-center column'>
+        <div className='herocard-container flex-center-center column' onClick={() => chooseHero(hero)}>
             <h2>{hero.name}</h2>
             <div className='hero-stats-container flex wrap'>
                 <p>hp: {hero.stats.hp}</p>
