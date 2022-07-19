@@ -5,7 +5,15 @@
     color: var(--primary-text-color);
 }
 
+.battle-btn {
+    background-color: var(--secondary-btn-color);
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .beginning-story-container {
     width: 100%;
     max-width: 600px;
+    margin: 10px;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import StoryCard from '../../components/storycard/StoryCard'
 
 import './beginning.css'
@@ -9,6 +10,7 @@ const Beginning = () => {
         <div className='text-center'>
           <h2>Beginning</h2>
           <p>here you will be able to see your new party and choose a starting point</p>
+          <Link className='battle-btn' to='/combat'>Test your hero's might</Link>
         </div>
         <div className='beginning-story-container  flex-justify-center wrap'>
           <StoryCard />
