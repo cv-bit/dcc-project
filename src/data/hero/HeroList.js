@@ -20,9 +20,9 @@ HeroTwo.name = 'hero 2'
 HeroTwo.focus = 'combat'
 HeroTwo.stats= {
     hp: 0,
-    power: 1,
+    power: 2,
     magic: 0,
-    speed: 1,
+    speed: 0,
     stamina: 5,
     luck: 0,
     xp: 0,
