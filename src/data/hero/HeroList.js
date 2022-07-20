@@ -5,8 +5,8 @@ const HeroOne = new HeroClass()
 HeroOne.name = 'hero 1'
 HeroOne.focus = 'combat'
 HeroOne.stats= {
-    hp: 1,
-    power: 1,
+    hp: 0,
+    power: 2,
     magic: 0,
     speed: 0,
     stamina: 5,
@@ -20,9 +20,9 @@ HeroTwo.name = 'hero 2'
 HeroTwo.focus = 'combat'
 HeroTwo.stats= {
     hp: 0,
-    power: 2,
+    power: 0,
     magic: 0,
-    speed: 0,
+    speed: 2,
     stamina: 5,
     luck: 0,
     xp: 0,

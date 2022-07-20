@@ -20,7 +20,7 @@ const HeroCard = ({hero}) => {
                 <p>luck: {hero.stats.luck}</p>
                 <p>xp: {hero.stats.xp}</p>
             </div>
-            <p>{hero.focus}</p>
+            <p>focus: {hero.focus}</p>
         </div>
     )
 }
