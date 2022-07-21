@@ -24,13 +24,18 @@ const EnemySix = new Enemy()
 
 EnemySix.name = 'skeleton'
 
+const EnemySeven = new Enemy()
+
+EnemySeven.name = 'Dragon'
+
 const EnemyList = [
     EnemyOne,
     EnemyTwo,
     EnemyThree,
     EnemyFour,
     EnemyFive,
-    EnemySix
+    EnemySix,
+    EnemySeven
 ]
 
 export default EnemyList

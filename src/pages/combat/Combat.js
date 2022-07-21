@@ -7,7 +7,7 @@ import './combat.css'
 const Combat = () => {
     return (
         <div className='combat-container min-width-100 min-height-100 flex-center-center column'>
-            Combat
+            <h2>Combat</h2>
             <div className='flex-center-center wrap text-center'>
                 {EnemyList.map((enemy, key) => {
                     return <EnemyCard enemy={enemy} key={key} />
