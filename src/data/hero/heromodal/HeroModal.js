@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { diceRoller } from '../../../utils/DiceRoller'
 import {HiOutlinePlus} from 'react-icons/hi'
-import { plusPower, plusMagic, plusSpeed, plusLuck } from '../HeroFunctions'
+import { editName, plusPower, plusMagic, plusSpeed, plusLuck } from '../HeroFunctions'
 
 import './heromodal.css'
 
@@ -30,6 +30,10 @@ const HeroModal = ({hero, setHeroModal}) => {
 
             <div className=''>
                 <div className='flex-center-center column width-100'>
+                    <div>
+                        <label>enter name:</label>
+                        <input placeholder={hero.name} onChange={(input) => editName(hero, input.target.value)} ></input>
+                    </div>
                     <div className='flex width-100 margin-5'>
                         <p>power: {hero.stats.power}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusPower(hero) & setRollResuluts(rollResults -1)}/> 
                     </div>

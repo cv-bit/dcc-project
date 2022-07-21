@@ -1,3 +1,14 @@
+const editName = (hero, input) => {
+    if(localStorage.getItem('hero')) {
+        let myHero = JSON.parse(localStorage.getItem('hero'))
+        myHero.name = input
+        hero.name = input
+        localStorage.setItem('hero', JSON.stringify(myHero))
+    } else {
+        hero.name = input
+    }
+}
+
 const plusHp = (hero) => {
     if(localStorage.getItem('hero')) {
         let myHero = JSON.parse(localStorage.getItem('hero'))
@@ -76,6 +87,7 @@ const plusXp = (hero) => {
 }
 
 export {
+    editName,
     plusHp,
     plusPower,
     plusMagic,
