@@ -104,3 +104,7 @@ button {
 .text-center {
   text-align: center;
 }
+
+.margin-5 {
+  margin: 10px;
+}

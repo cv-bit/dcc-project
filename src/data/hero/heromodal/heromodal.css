@@ -26,3 +26,8 @@
     background-color: var(--primary-btn-color);
     color: var(--primary-text-color);
 }
+
+.stat-plus {
+    cursor: pointer;
+    margin: 0 5px;
+}
