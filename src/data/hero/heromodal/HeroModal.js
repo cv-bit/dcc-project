@@ -5,10 +5,9 @@ import { editName, plusPower, plusMagic, plusSpeed, plusLuck } from '../HeroFunc
 
 import './heromodal.css'
 
-const HeroModal = ({hero, setHeroModal}) => {
+const HeroModal = ({hero, hasRolled, setHasRolled, setHeroModal}) => {
     
     const [rollResults, setRollResuluts] = useState()
-    const [hasRolled, setHasRolled] = useState(true)
     
     let statRolls = true
 
@@ -20,7 +19,7 @@ const HeroModal = ({hero, setHeroModal}) => {
 
     return (
         <div className='heromodal-container flex-center-center column'>
-            <button className='heromodal-stat-btn' onClick={() => hasRolled && (setRollResuluts(diceRoller(6, statRolls)) & setHasRolled(false))}>roll for stat points</button>
+            <button className='heromodal-stat-btn' onClick={() => !hasRolled && (setRollResuluts(diceRoller(6, statRolls)) & setHasRolled(false))}>roll for stat points</button>
             <p>you can roll once</p>
             <h2>{hero.name}</h2>
             

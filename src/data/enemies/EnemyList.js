@@ -2,27 +2,27 @@ import Enemy from "./Enemy";
 
 const EnemyOne = new Enemy()
 
-EnemyOne.name = 'enemy 1'
+EnemyOne.name = 'goblin'
 
 const EnemyTwo = new Enemy()
 
-EnemyTwo.name = 'enemy 2'
+EnemyTwo.name = 'wolf'
 
 const EnemyThree = new Enemy()
 
-EnemyThree.name = 'enemy 3'
+EnemyThree.name = 'bandit'
 
 const EnemyFour = new Enemy()
 
-EnemyFour.name = 'enemy 4'
+EnemyFour.name = 'boar'
 
 const EnemyFive = new Enemy()
 
-EnemyFive.name = 'enemy 5'
+EnemyFive.name = 'slime'
 
 const EnemySix = new Enemy()
 
-EnemySix.name = 'enemy 6'
+EnemySix.name = 'skeleton'
 
 const EnemyList = [
     EnemyOne,

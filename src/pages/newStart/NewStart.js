@@ -11,6 +11,7 @@ const NewStart = () => {
   const [heroModal, setHeroModal] = useState(false)
   const [selectedHero, setSelectedHero] = useState(HeroList[0])
   const [hasHero, setHasHero] = useState({})
+  const [hasRolled, setHasRolled] = useState(false)
 
   useEffect(() => {
     if(localStorage.getItem('hero')) {
@@ -35,7 +36,7 @@ const NewStart = () => {
           })
         }
       </div>
-      {heroModal && <HeroModal hero={selectedHero} setHeroModal={setHeroModal} />}
+      {heroModal && <HeroModal hero={selectedHero} hasRolled={hasRolled} setHasRolled={setHasRolled} setHeroModal={setHeroModal} />}
     </div>
   )
 }
