@@ -1,15 +1,16 @@
-import React from 'react'
+import HeroModal from '../../data/hero/heromodal/HeroModal'
 
 import './herocard.css'
 
-const HeroCard = ({hero}) => {
+const HeroCard = ({hero, setSelectedHero, setHeroModal}) => {
 
-    const chooseHero = (hero) => {
-        alert('you choose ' + hero.name)
+    const chooseHero = () => {
+        setSelectedHero(hero)
+        setHeroModal(true)
     }
 
     return (
-        <div className='herocard-container flex-center-center column' onClick={() => chooseHero(hero)}>
+        <div className='herocard-container flex-center-center column' onClick={() => chooseHero()}>
             <h2>{hero.name}</h2>
             <div className='hero-stats-container flex wrap'>
                 <p>hp: {hero.stats.hp}</p>

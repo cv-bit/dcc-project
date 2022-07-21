@@ -29,6 +29,9 @@ published site on netlify
 day 3
 started adding heros created a list of heros and also started making enemy cards and a combat page
 
+day 4 or 5
+added ability to save hero and working on customizing hero stats next will try to add cusomizing stats and companions and a shop
+
 Idea
 
 this game will be a text based rpg taking inspiration from DnD and DCC

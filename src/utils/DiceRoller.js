@@ -1,4 +1,4 @@
-const diceRoller = (die) => {
+const diceRoller = (die, statRolls) => {
     let results = Math.floor(Math.random() * die) + 1;
     let message = ''
     if (results === 1) {
@@ -13,6 +13,8 @@ const diceRoller = (die) => {
     }
 
     console.log(results, die)
+
+    if(statRolls) return results
 
     return alert(results + " " + message)
 }
