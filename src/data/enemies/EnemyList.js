@@ -26,7 +26,14 @@ EnemySix.name = 'skeleton'
 
 const EnemySeven = new Enemy()
 
-EnemySeven.name = 'Dragon'
+EnemySeven.name = 'Lesser Dragon'
+EnemySeven.stats = {
+    hp: 10,
+    power: 5,
+    magic: 5,
+    speed: 5,
+    stamina: 5,
+}
 
 const EnemyList = [
     EnemyOne,
