@@ -17,7 +17,6 @@ const NewStart = () => {
       let tempHero = localStorage.getItem('hero')
       setHasHero(JSON.parse(tempHero))
     }
-    console.log(hasHero)
   }, [heroModal])
 
   return (
