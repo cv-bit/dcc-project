@@ -1,4 +1,3 @@
-import HeroModal from '../../data/hero/heromodal/HeroModal'
 
 import './herocard.css'
 
