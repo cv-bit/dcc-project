@@ -23,7 +23,7 @@ const NewStart = () => {
     <div className='newStart-container min-width-100 min-height-100 flex-center-center column'>
       <div className='newStart-continue-container flex-center-center column height-100'>
         <h2>new game dialog</h2>
-        <p>here you will be able to create your party to adventure with</p>
+        <p>here you will be able to create a hero to adventure with</p>
         <Link className='create-party-link' to="/beginning" >continue</Link>
         {hasHero && hasHero.name && "my hero: " + hasHero.name}
       </div>

@@ -5,6 +5,14 @@
     color: var(--primary-text-color);
 }
 
+.beginning-container-intro {
+    height: 100px;
+}
+
+.beginning-container-intro p {
+    margin: 5px;
+}
+
 .battle-btn {
     background-color: var(--secondary-btn-color);
     margin: 5px;
