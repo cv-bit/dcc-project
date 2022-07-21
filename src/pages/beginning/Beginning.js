@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import StoryCard from '../../components/storycard/StoryCard'
+import HeroCard from '../../components/herocard/HeroCard'
 
 import './beginning.css'
 
@@ -19,22 +20,9 @@ const Beginning = () => {
           <p>here you will be able to see your new party and choose a starting point</p>
           <Link className='battle-btn' to='/combat'>Test your hero's might</Link>
         </div>
-        {myHero && myHero.name && myHero.name}
-        {myHero && myHero.name && <div className='flex-center-center column'>
-            <div style={{width: '300px', display: 'flex', justifyContent: 'space-between'}}>
-              <div>
-                <p>hp: {myHero.stats.hp}</p>
-                <p>power: {myHero.stats.power}</p>
-                <p>magic: {myHero.stats.magic}</p>
-              </div>
-              <div style={{width: '100px'}}>
-                <p>speed: {myHero.stats.speed}</p>
-                <p>stamina: {myHero.stats.stamina}</p>
-                <p>luck: {myHero.stats.luck}</p>
-              </div>
-            </div>
-            <p style={{width: '100%', textAlign: 'center'}}>xp: {myHero.stats.xp}</p>
-          </div>}
+        {
+          myHero && <HeroCard hero={myHero} />
+        }
         <div className='beginning-story-container  flex-justify-center wrap'>
           <StoryCard />
           <StoryCard />
