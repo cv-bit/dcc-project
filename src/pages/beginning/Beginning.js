@@ -21,7 +21,7 @@ const Beginning = () => {
           <Link className='battle-btn' to='/combat'>Test your hero's might</Link>
         </div>
         {
-          myHero && <HeroCard hero={myHero} />
+          myHero && myHero.name && <HeroCard hero={myHero} />
         }
         <div className='beginning-story-container  flex-justify-center wrap'>
           <StoryCard />
