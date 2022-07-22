@@ -16,8 +16,8 @@ const Beginning = () => {
   return (
     <div className='beginning-container min-width-100 min-height-100 flex-center-center column'>
         <div className='beginning-container-intro flex-center-center column text-center'>
-          <h2>Beginning</h2>
-          <p>here you will be able to see your new party and choose a starting point</p>
+          <h2>Beginning Town</h2>
+          <p>here you will be able to see your party and adventure</p>
           <div>
             <Link className='battle-btn' to='/combat'>Arena</Link>
             <Link className='shop-btn' to='/shop'>Shop</Link>
