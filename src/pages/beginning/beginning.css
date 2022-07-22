@@ -35,8 +35,7 @@
 }
 
 .tavern-btn {
-    background-color: yellow;
-    color: var(--secondary-text-color);
+    background-color: orange;
     margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
