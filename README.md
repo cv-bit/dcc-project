@@ -26,12 +26,15 @@ started editing files made player enemy and npc classes also made changes to dic
 adding story cards going to hero cards and hero container and random hero selector for creating party
 published site on netlify
 
-day 3
+day 3 - 4
 started adding heros created a list of heros and also started making enemy cards and a combat page
 
-day 4 or 5
+day 5 -6
 added ability to save hero and working on customizing hero stats next will try to add cusomizing stats and companions and a shop
 added hero functions and ability to increase stats on character selection added ability to set hero name
+
+day 6 - 7
+adding shop page and guild page will soon add items and purchase also adding inventory and equip slots to heros
 
 Idea
 

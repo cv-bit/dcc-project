@@ -30,6 +30,20 @@ class HeroClass {
 
     ]
 
+    equip = {
+        belt: '',
+        back: '',
+        weapon: '',
+        armor: ''
+    }
+
+    inventory = [
+        {
+            bag: '',
+            space: 0,
+        },
+    ]
+
     items= [
 
     ]
