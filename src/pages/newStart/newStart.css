@@ -6,10 +6,6 @@
     position: relative;
 }
 
-.newStart-hero-container {
-    border: 4px solid var(--primary-btn-color);
-}
-
 .newStart-hero-container h2 {
     width: 100%;
 }

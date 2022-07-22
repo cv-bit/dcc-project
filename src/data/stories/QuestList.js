@@ -18,11 +18,11 @@ storyFour.name = 'the mage tower'
 
 const storyFive = new Quest()
 
-storyFive.name = 'army of the dead'
+storyFive.name = 'the night king'
 
 const storySix = new Quest()
 
-storySix.name = 'the toad king'
+storySix.name = 'trouble in toad village'
 
 const QuestList = [
     storyOne,
