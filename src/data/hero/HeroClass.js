@@ -14,6 +14,8 @@ class HeroClass {
         xp: 0,
     }
 
+    armor = 0
+
     occupation= ""
 
     Token=""

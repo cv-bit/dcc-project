@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import StoryCard from '../../components/storycard/StoryCard'
 import HeroCard from '../../components/herocard/HeroCard'
+import QuestList from '../../data/stories/QuestList'
 
 import './beginning.css'
 
@@ -30,12 +31,11 @@ const Beginning = () => {
           myHero && myHero.name && <HeroCard hero={myHero} />
         }
         <div className='beginning-story-container  flex-justify-center wrap'>
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
-          <StoryCard />
+          {
+            QuestList.map((quest, key) => {
+              return <StoryCard quest={quest} key={key} />
+            })
+          }
         </div>
     </div>
   )
