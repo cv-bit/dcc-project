@@ -6,7 +6,7 @@
 }
 
 .beginning-container-intro {
-    height: 100px;
+    height: 100%;
 }
 
 .beginning-container-intro p {
@@ -29,6 +29,21 @@
 
 .guild-btn {
     background-color: var(--green-color);
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.tavern-btn {
+    background-color: yellow;
+    color: var(--secondary-text-color);
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.docks-btn {
+    background-color: brown;
     margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;

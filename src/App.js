@@ -5,6 +5,8 @@ import Beginning from './pages/beginning/Beginning'
 import Combat from './pages/combat/Combat'
 import Guild from './pages/guild/Guild'
 import Shop from './pages/shop/Shop'
+import Tavern from './pages/tavern/Tavern'
+import Docks from './pages/docks/Docks'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='/combat' element={<Combat />} />
         <Route path='/guild' element={<Guild />} />
         <Route path='/shop' element={<Shop />} />
+        <Route path='/tavern' element={<Tavern />} />
+        <Route path='/docks' element={<Docks />} />
       </Routes>
     </BrowserRouter>
   );

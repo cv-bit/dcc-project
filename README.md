@@ -35,6 +35,7 @@ added hero functions and ability to increase stats on character selection added 
 
 day 6 - 7
 adding shop page and guild page will soon add items and purchase also adding inventory and equip slots to heros
+adding tavern and dock pages
 
 Idea
 

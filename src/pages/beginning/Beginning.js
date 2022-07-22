@@ -18,10 +18,12 @@ const Beginning = () => {
         <div className='beginning-container-intro flex-center-center column text-center'>
           <h2>Beginning Town</h2>
           <p>here you will be able to see your party and adventure</p>
-          <div>
+          <div className='flex-center-center wrap'>
             <Link className='battle-btn' to='/combat'>Arena</Link>
             <Link className='shop-btn' to='/shop'>Shop</Link>
             <Link className='guild-btn' to='/guild'>Guild Hall</Link>
+            <Link className='tavern-btn' to='/tavern'>Tavern</Link>
+            <Link className='docks-btn' to='/docks'>Ship Docks</Link>
           </div>
         </div>
         {
