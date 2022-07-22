@@ -1,0 +1,18 @@
+.item-container {
+    width: 250px;
+    height: 250px;
+    border: 5px solid var(--primary-btn-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item-container:hover {
+    transform: scale(105%);
+}
+
+.item-container h2 {
+    margin: 5px;
+}

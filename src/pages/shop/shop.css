@@ -4,3 +4,7 @@
     background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
+
+.item-list-container {
+    margin: 10px;
+}

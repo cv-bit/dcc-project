@@ -1,4 +1,5 @@
 import React from 'react'
+import ItemCard from '../../components/itemcard/ItemCard'
 
 import './shop.css'
 
@@ -9,6 +10,14 @@ const Shop = () => {
         <p>coming soon</p>
         <p>black smiths, armorers, fishermen, alchemists, trinkets, odds and ends everything you need can be found here</p>
         <p>here you can buy all kinds of cool stuff from weapons to armor, potions and food, companions and even story cards</p>
+        <div className='item-list-container flex-center-center wrap text-center'>
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+          <ItemCard />
+        </div>
     </div>
   )
 }
