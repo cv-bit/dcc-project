@@ -15,21 +15,21 @@
 
 .battle-btn {
     background-color: var(--secondary-btn-color);
-    margin: 5px;
+    margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .shop-btn {
     background-color: var(--primary-btn-color);
-    margin: 5px;
+    margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .guild-btn {
     background-color: var(--green-color);
-    margin: 5px;
+    margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
 }
