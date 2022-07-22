@@ -25,12 +25,21 @@ a {
   margin: 5px;
 }
 
+a:hover {
+  transform: scale(102%);
+}
+
 button {
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   margin: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(102%);
 }
 
 /* css variables */
