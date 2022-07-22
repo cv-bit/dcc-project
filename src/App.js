@@ -17,7 +17,7 @@ function App() {
         <Route path='/beginning' element={<Beginning />} />
         <Route path='/combat' element={<Combat />} />
         <Route path='/guild' element={<Guild />} />
-        <Route path='/shop' element={<Shop />} />
+        <Route path='/market' element={<Shop />} />
         <Route path='/tavern' element={<Tavern />} />
         <Route path='/docks' element={<Docks />} />
       </Routes>

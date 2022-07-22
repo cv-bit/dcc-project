@@ -20,7 +20,7 @@ const Beginning = () => {
           <p>here you will be able to see your party and adventure</p>
           <div className='flex-center-center wrap'>
             <Link className='battle-btn' to='/combat'>Arena</Link>
-            <Link className='shop-btn' to='/shop'>Shop</Link>
+            <Link className='market-btn' to='/market'>Market</Link>
             <Link className='guild-btn' to='/guild'>Guild Hall</Link>
             <Link className='tavern-btn' to='/tavern'>Tavern</Link>
             <Link className='docks-btn' to='/docks'>Ship Docks</Link>
