@@ -29,7 +29,7 @@ const NewStart = () => {
         {hasHero && hasHero.name && "my hero: " + hasHero.name}
       </div>
       <div className='newStart-hero-container flex-center-center wrap text-center'>
-        <h2>Pick your heros</h2>
+        <h2>Choose your hero</h2>
         {
           HeroList.map((hero, key) => {
             return <HeroCard hero={hero} key={key} setSelectedHero={setSelectedHero} setHeroModal={setHeroModal} />
