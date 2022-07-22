@@ -8,6 +8,7 @@ const Docks = () => {
         <h2>Docks</h2>
         <p>coming soon</p>
         <p>here you can go to other cities and find new adventures</p>
+        <p>meet npc's</p>
     </div>
   )
 }

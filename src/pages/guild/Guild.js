@@ -8,6 +8,7 @@ const Guild = () => {
         <h2>Guild</h2>
         <p>coming soon</p>
         <p>from here you can aquire companions unlock story cards and go through training to learn cool abilities</p>
+        <p>meet npc's</p>
     </div>
   )
 }
