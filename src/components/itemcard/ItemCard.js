@@ -8,7 +8,7 @@ const ItemCard = ({item}) => {
         if(localStorage.getItem('hero')) {
             let tempHero = JSON.parse(localStorage.getItem('hero'))
 
-            if(tempHero.gold > item.value) {
+            if(tempHero.gold >= item.value) {
                 tempHero.items.push(item)
                 tempHero.gold -= item.value
                 localStorage.setItem('hero', JSON.stringify(tempHero))
