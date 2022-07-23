@@ -12,6 +12,10 @@
     transform: scale(105%);
 }
 
+.enemycard-container h2 {
+    color: var(--secondary-btn-color);
+}
+
 .enemy-stats-container {
     padding: auto;
 }

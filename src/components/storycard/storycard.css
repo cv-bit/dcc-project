@@ -11,3 +11,7 @@
 .storycard-container:hover {
     transform: scale(105%);
 }
+
+.storycard-container h2 {
+    color: yellow;
+}

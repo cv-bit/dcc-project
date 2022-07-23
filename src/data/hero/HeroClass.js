@@ -6,17 +6,20 @@ class HeroClass {
 
     stats= {
         hp: 0,
-        tempHp: 0,
         power: 0,
-        tempPower: 0,
         magic: 0,
-        tempMagic: 0,
         speed: 0,
-        tempSpeed: 0,
         stamina: 5,
-        tempStamina: 5,
         luck: 0,
         xp: 0,
+    }
+
+    tempStats = {
+        tempHp: this.stats.hp,
+        tempPower: this.stats.power,
+        tempMagic: this.stats.magic,
+        tempSpeed: this.stats.speed,
+        tempStamina: this.stats.stamina,
     }
 
     armor = 0
@@ -59,7 +62,7 @@ class HeroClass {
 
     ]
 
-    gold= 0
+    gold= 10
 }
 
 export default HeroClass
