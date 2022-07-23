@@ -2,10 +2,10 @@ import React from 'react'
 
 import './itemcard.css'
 
-const ItemCard = () => {
+const ItemCard = ({item}) => {
   return (
     <div className='item-container flex-center-center column'>
-        ItemCard
+        <h2 onClick={item.useFunction}>{item.name}</h2>
     </div>
   )
 }

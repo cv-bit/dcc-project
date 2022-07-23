@@ -20,6 +20,11 @@ const NewStart = () => {
     }
   }, [heroModal])
 
+  const chooseHero = (hero) => {
+    setSelectedHero(hero)
+    setHeroModal(true)
+}
+
   return (
     <div className='newStart-container min-width-100 min-height-100 flex-center-center column'>
       <div className='newStart-continue-container flex-center-center column height-100'>
@@ -32,11 +37,11 @@ const NewStart = () => {
         <h2>Choose your hero</h2>
         {
           HeroList.map((hero, key) => {
-            return <HeroCard hero={hero} key={key} setSelectedHero={setSelectedHero} setHeroModal={setHeroModal} />
+            return <HeroCard hero={hero} key={key} func={chooseHero} />
           })
         }
       </div>
-      {heroModal && <HeroModal hero={selectedHero} hasRolled={hasRolled} setHasRolled={setHasRolled} setHeroModal={setHeroModal} />}
+      {heroModal && <HeroModal hero={selectedHero} hasRolled={hasRolled} setHasRolled={setHasRolled} setHeroModal={setHeroModal}/>}
     </div>
   )
 }

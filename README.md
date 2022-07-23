@@ -37,6 +37,9 @@ day 6 - 7
 adding shop page and guild page will soon add items and purchase also adding inventory and equip slots to heros
 adding tavern and dock pages add armor to hero class, adding quests to story cards, started working on items
 
+day 7 - 8
+working on shop and items and also adding temp stat values for combat and ability to equip stat boosts
+
 Idea
 
 this game will be a text based rpg taking inspiration from DnD and DCC

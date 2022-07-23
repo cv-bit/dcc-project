@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCard from '../../components/itemcard/ItemCard'
+import ItemList from '../../data/items/ItemList'
 
 import './shop.css'
 
@@ -12,12 +13,11 @@ const Shop = () => {
         <p>here you can buy all kinds of cool stuff from weapons to armor, potions and food, companions and even story cards</p>
         <p>meet npc's</p>
         <div className='item-list-container flex-center-center wrap text-center'>
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
+          {
+            ItemList.map((item, key) => {
+              return <ItemCard item={item} key={key} />
+            })
+          }
         </div>
     </div>
   )

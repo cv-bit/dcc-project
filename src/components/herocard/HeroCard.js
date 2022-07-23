@@ -1,15 +1,10 @@
 
 import './herocard.css'
 
-const HeroCard = ({hero, setSelectedHero, setHeroModal}) => {
-
-    const chooseHero = () => {
-        setSelectedHero(hero)
-        setHeroModal(true)
-    }
+const HeroCard = ({hero, func}) => {
 
     return (
-        <div className='herocard-container flex-center-center column' onClick={() => chooseHero()}>
+        <div className='herocard-container flex-center-center column' onClick={() => func(hero)}>
             <h2>{hero.name}</h2>
             <div className='hero-stats-container flex wrap'>
                 <p>hp: {hero.stats.hp}</p>
