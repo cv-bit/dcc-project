@@ -29,7 +29,7 @@ const Beginning = () => {
           </div>
         </div>
         {
-          myHero && myHero.name && <div className='flex wrap'>
+          myHero && myHero.name && <div className='flex-justify-center wrap'>
           <HeroCard hero={myHero} /> <HeroInfoCard hero={myHero}/>
           </div>
         }
