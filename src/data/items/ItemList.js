@@ -65,7 +65,7 @@ const ItemSeven = new ItemClass()
 ItemSeven.name = 'sling shot'
 ItemSeven.type = 'weapon'
 ItemSeven.rarity = 'common'
-ItemSeven.value = 4
+ItemSeven.value = 2
 ItemSeven.useFunction = () => {
     alert(ItemSeven.name + ' is ' + ItemSeven.value + ' gold ')
 }
