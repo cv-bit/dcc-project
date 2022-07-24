@@ -8,6 +8,8 @@ class ItemClass {
 
     value = 0
 
+    rarity = ''
+
     useFunction = () => {
         console.log('working')
     }
