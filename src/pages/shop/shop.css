@@ -5,6 +5,10 @@
     color: var(--primary-text-color);
 }
 
+.shop-container > h2 {
+    color: var(--primary-btn-color);
+}
+
 .item-list-container {
     margin: 10px;
 }

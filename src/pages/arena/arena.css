@@ -1,0 +1,8 @@
+.arena-container {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.arena-container > h2 {
+    color: var(--secondary-btn-color);
+}

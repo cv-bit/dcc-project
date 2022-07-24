@@ -4,3 +4,7 @@
     background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
+
+.guild-container > h2 {
+    color: var(--green-color);
+}

@@ -9,6 +9,8 @@ class Enemy {
 
     description = ''
 
+    img = ''
+
     stats= {
         hp: 0,
         power: 0,

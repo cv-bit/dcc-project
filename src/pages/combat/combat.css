@@ -1,4 +1,47 @@
 .combat-container {
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    padding: 50px 0 100px 0;
+    position: relative;
+}
+
+.enemy-battle-container {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.hero-control-bar {
+    width: 100%;
+    height: 100px;
+    background-color: var(--common-item);
+    color: var(--secondary-text-color);
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+.combat-attack-btn {
+    background-color: var(--secondary-btn-color);
+    color: var(--primary-text-color);
+}   
+
+.combat-item-btn {
+    background-color: var(--green-color);
+    color: var(--primary-text-color);
+}
+
+.enemy-info-container {
+    width: 100%;
+    height: 100%;
+}
+
+.enemy-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-color: #fff;
 }

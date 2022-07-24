@@ -1,8 +1,8 @@
-import React from 'react'
 
 import './enemycard.css'
 
 const EnemyCard = ({enemy}) => {
+
     return (
         <div className='enemycard-container flex-center-center column'>
             <h2>{enemy.name}</h2>

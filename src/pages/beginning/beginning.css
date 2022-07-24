@@ -48,6 +48,13 @@
     border-radius: 5px;
 }
 
+.forest-btn {
+    background-color: green;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .beginning-story-container {
     width: 100%;
     margin: 10px;

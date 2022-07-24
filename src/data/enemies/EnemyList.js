@@ -1,8 +1,16 @@
 import Enemy from "./Enemy";
+import GoblinImg from '../../assets/images/goblin.jpg'
+import WolfImg from '../../assets/images/Wolfie.webp'
+import Bandit from '../../assets/images/bandit.png'
+import Boar from '../../assets/images/boar.webp'
+import Slime from '../../assets/images/slime.png'
+import Skeleton from '../../assets/images/skeleton.webp'
+import lesserDragon from '../../assets/images/lesserDragon.jpg'
 
 const EnemyOne = new Enemy()
 
 EnemyOne.name = 'goblin'
+EnemyOne.img = GoblinImg
 EnemyOne.stats= {
     hp: 3,
     power: 1,
@@ -15,6 +23,7 @@ EnemyOne.description = 'a green monster full of trickery'
 const EnemyTwo = new Enemy()
 
 EnemyTwo.name = 'wolf'
+EnemyTwo.img = WolfImg
 EnemyTwo.stats= {
     hp: 3,
     power: 1,
@@ -27,6 +36,7 @@ EnemyTwo.description = 'hunters of the forest usually hunt in packs'
 const EnemyThree = new Enemy()
 
 EnemyThree.name = 'bandit'
+EnemyThree.img = Bandit
 EnemyThree.stats= {
     hp: 4,
     power: 1,
@@ -39,6 +49,7 @@ EnemyThree.description = 'low lifes trying to rob inoccent people they come accr
 const EnemyFour = new Enemy()
 
 EnemyFour.name = 'boar'
+EnemyFour.img = Boar
 EnemyFour.stats= {
     hp: 4,
     power: 1,
@@ -51,6 +62,7 @@ EnemyFour.description = 'wild boars destroy farmers land and will charge at anyo
 const EnemyFive = new Enemy()
 
 EnemyFive.name = 'slime'
+EnemyFive.img = Slime
 EnemyFive.stats= {
     hp: 1,
     power: 0,
@@ -63,6 +75,7 @@ EnemyFive.description = `slimes are immune to physical attacks and usually have 
 const EnemySix = new Enemy()
 
 EnemySix.name = 'skeleton'
+EnemySix.img = Skeleton
 EnemySix.stats= {
     hp: 5,
     power: 1,
@@ -75,6 +88,7 @@ EnemySix.description = 'raised from their sleep skeletons are magically created 
 const EnemySeven = new Enemy()
 
 EnemySeven.name = 'Lesser Dragon'
+EnemySeven.img = lesserDragon
 EnemySeven.stats = {
     hp: 10,
     power: 5,

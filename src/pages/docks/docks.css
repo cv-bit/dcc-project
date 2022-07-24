@@ -4,3 +4,7 @@
     background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
+
+.docks-container > h2 {
+    color: #a0522d;
+}
