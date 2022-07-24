@@ -13,6 +13,7 @@ const EnemyCard = ({enemy}) => {
                 <p>speed: {enemy.stats.speed}</p>
                 <p>stamina: {enemy.stats.stamina}</p>
             </div>
+            <p>{enemy.description}</p>
         </div>
     )
 }

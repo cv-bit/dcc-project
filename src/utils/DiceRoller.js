@@ -12,8 +12,6 @@ const diceRoller = (die, statRolls) => {
         message = 'critical success'
     }
 
-    console.log(results, die)
-
     if(statRolls) return results
 
     return alert(results + " " + message)

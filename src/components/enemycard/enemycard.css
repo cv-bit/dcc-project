@@ -18,6 +18,7 @@
 
 .enemy-stats-container {
     padding: auto;
+    margin: 5px;
 }
 
 .enemy-stats-container p {

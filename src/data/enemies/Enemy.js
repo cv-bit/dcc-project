@@ -7,6 +7,8 @@ class Enemy {
 
     difficulty= ''
 
+    description = ''
+
     stats= {
         hp: 0,
         power: 0,
