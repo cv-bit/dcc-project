@@ -13,6 +13,13 @@ HeroOne.stats= {
     luck: 0,
     xp: 0,
 }
+HeroOne.tempStats = {
+    tempHp: HeroOne.stats.hp,
+    tempMagic: HeroOne.stats.magic,
+    tempPower: HeroOne.stats.power,
+    tempSpeed: HeroOne.stats.speed,
+    tempStamina: HeroOne.stats.stamina
+}
 
 const HeroTwo = new HeroClass()
 
@@ -26,6 +33,13 @@ HeroTwo.stats= {
     stamina: 5,
     luck: 0,
     xp: 0,
+}
+HeroTwo.tempStats = {
+    tempHp: HeroTwo.stats.hp,
+    tempMagic: HeroTwo.stats.magic,
+    tempPower: HeroTwo.stats.power,
+    tempSpeed: HeroTwo.stats.speed,
+    tempStamina: HeroTwo.stats.stamina
 }
 
 const HeroThree = new HeroClass()
@@ -41,6 +55,13 @@ HeroThree.stats= {
     luck: 0,
     xp: 0,
 }
+HeroThree.tempStats = {
+    tempHp: HeroThree.stats.hp,
+    tempMagic: HeroThree.stats.magic,
+    tempPower: HeroThree.stats.power,
+    tempSpeed: HeroThree.stats.speed,
+    tempStamina: HeroThree.stats.stamina
+}
 
 const HeroFour = new HeroClass()
 
@@ -54,6 +75,13 @@ HeroFour.stats= {
     stamina: 5,
     luck: 1,
     xp: 0,
+}
+HeroFour.tempStats = {
+    tempHp: HeroFour.stats.hp,
+    tempMagic: HeroFour.stats.magic,
+    tempPower: HeroFour.stats.power,
+    tempSpeed: HeroFour.stats.speed,
+    tempStamina: HeroFour.stats.stamina
 }
 
 const HeroFive = new HeroClass()
@@ -69,6 +97,13 @@ HeroFive.stats= {
     luck: 0,
     xp: 0,
 }
+HeroFive.tempStats = {
+    tempHp: HeroFive.stats.hp,
+    tempMagic: HeroFive.stats.magic,
+    tempPower: HeroFive.stats.power,
+    tempSpeed: HeroFive.stats.speed,
+    tempStamina: HeroFive.stats.stamina
+}
 
 const HeroSix = new HeroClass()
 
@@ -82,6 +117,13 @@ HeroSix.stats= {
     stamina: 5,
     luck: 0,
     xp: 0,
+}
+HeroSix.tempStats = {
+    tempHp: HeroSix.stats.hp,
+    tempMagic: HeroSix.stats.magic,
+    tempPower: HeroSix.stats.power,
+    tempSpeed: HeroSix.stats.speed,
+    tempStamina: HeroSix.stats.stamina
 }
 
 const HeroList = [

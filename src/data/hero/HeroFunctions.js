@@ -14,6 +14,7 @@ const plusHp = (hero) => {
         let myHero = JSON.parse(localStorage.getItem('hero'))
         myHero.stats.hp++
         hero.stats.hp++
+        hero.tempStats.tempHp++
         localStorage.setItem('hero', JSON.stringify(myHero))
     } else {
         hero.stats.hp++
@@ -25,6 +26,7 @@ const plusPower = (hero) => {
         let myHero = JSON.parse(localStorage.getItem('hero'))
         myHero.stats.power++
         hero.stats.power++
+        hero.tempStats.tempPower++
         localStorage.setItem('hero', JSON.stringify(myHero))
     } else {
         hero.stats.power++
@@ -36,6 +38,7 @@ const plusMagic = (hero) => {
         let myHero = JSON.parse(localStorage.getItem('hero'))
         myHero.stats.magic++
         hero.stats.magic++
+        hero.tempStats.tempMagic++
         localStorage.setItem('hero', JSON.stringify(myHero))
     } else {
         hero.stats.magic++
@@ -47,6 +50,7 @@ const plusSpeed = (hero) => {
         let myHero = JSON.parse(localStorage.getItem('hero'))
         myHero.stats.speed++
         hero.stats.speed++
+        hero.tempStats.tempSpeed++
         localStorage.setItem('hero', JSON.stringify(myHero))
     } else {
         hero.stats.speed++
@@ -58,6 +62,7 @@ const plusStamina = (hero) => {
         let myHero = JSON.parse(localStorage.getItem('hero'))
         myHero.stats.stamina++
         hero.stats.stamina++
+        hero.tempStats.tempStamina++
         localStorage.setItem('hero', JSON.stringify(myHero))
     } else {
         hero.stats.stamina++

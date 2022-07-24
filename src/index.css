@@ -53,6 +53,11 @@ button:hover {
   --secondary-text-color: #000;
 
   --green-color: #0bda51;
+
+  --common-item: #C8C8C8;
+  --good-item: #0bda51;
+  --rare-item: orange;
+  --epic-item: #8a2be2;
 }
 
 /* highly used css styles */
