@@ -5,7 +5,7 @@ import Bandit from '../../assets/images/bandit.png'
 import Boar from '../../assets/images/boar.webp'
 import Slime from '../../assets/images/slime.png'
 import Skeleton from '../../assets/images/skeleton.webp'
-import lesserDragon from '../../assets/images/lesserDragon.jpg'
+import Drake from '../../assets/images/drake.png'
 
 const EnemyOne = new Enemy()
 
@@ -87,8 +87,8 @@ EnemySix.description = 'raised from their sleep skeletons are magically created 
 
 const EnemySeven = new Enemy()
 
-EnemySeven.name = 'Lesser Dragon'
-EnemySeven.img = lesserDragon
+EnemySeven.name = 'Drake'
+EnemySeven.img = Drake
 EnemySeven.stats = {
     hp: 10,
     power: 5,
@@ -96,9 +96,9 @@ EnemySeven.stats = {
     speed: 5,
     stamina: 5,
 }
-EnemySeven.description = 'lesser dragons are young and very dangerous they attack any who cross into their territory and usually have large hordes of treasure'
+EnemySeven.description = 'Drake a ferocious draconic creature quick to temper and attack'
 
-const EnemyList = [
+const ArenaListOne = [
     EnemyOne,
     EnemyTwo,
     EnemyThree,
@@ -108,4 +108,4 @@ const EnemyList = [
     EnemySeven
 ]
 
-export default EnemyList
+export default ArenaListOne
