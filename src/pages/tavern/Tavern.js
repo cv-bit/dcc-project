@@ -24,7 +24,7 @@ const Tavern = () => {
         <h2>Tavern</h2> <Link className='home-btn' to='/beginning'>return to Town</Link>
         <p>coming soon</p>
         <p>here you can play mini games and rest</p>
-        <button onClick={() => rest()}>Stay the night</button>
+        <button className='tavern-rest-btn' onClick={() => rest()}>Get a room</button>
     </div>
   )
 }

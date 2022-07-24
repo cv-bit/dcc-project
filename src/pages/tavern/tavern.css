@@ -8,3 +8,9 @@
 .tavern-container > h2 {
     color: orange;
 }
+
+.tavern-rest-btn {
+    background-color: orange;
+    color: var(--primary-text-color);
+    margin: 10px;
+}

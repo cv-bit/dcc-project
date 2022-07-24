@@ -3,6 +3,7 @@
     height: 100%;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    padding-top: 50px;
 }
 
 .shop-container > h2 {

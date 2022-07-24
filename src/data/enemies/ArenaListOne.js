@@ -18,6 +18,13 @@ EnemyOne.stats= {
     speed: 1,
     stamina: 5,
 }
+EnemyOne.tempStats = {
+    tempHp: EnemyOne.stats.hp,
+    tempMagic: EnemyOne.stats.magic,
+    tempPower: EnemyOne.stats.power,
+    tempSpeed: EnemyOne.stats.speed,
+    tempStamina: EnemyOne.stats.stamina
+}
 EnemyOne.description = 'a green monster full of trickery'
 
 const EnemyTwo = new Enemy()
@@ -30,6 +37,13 @@ EnemyTwo.stats= {
     magic: 0,
     speed: 1,
     stamina: 5,
+}
+EnemyTwo.tempStats = {
+    tempHp: EnemyTwo.stats.hp,
+    tempMagic: EnemyTwo.stats.magic,
+    tempPower: EnemyTwo.stats.power,
+    tempSpeed: EnemyTwo.stats.speed,
+    tempStamina: EnemyTwo.stats.stamina
 }
 EnemyTwo.description = 'hunters of the forest usually hunt in packs'
 
@@ -44,6 +58,13 @@ EnemyThree.stats= {
     speed: 1,
     stamina: 5,
 }
+EnemyThree.tempStats = {
+    tempHp: EnemyThree.stats.hp,
+    tempMagic: EnemyThree.stats.magic,
+    tempPower: EnemyThree.stats.power,
+    tempSpeed: EnemyThree.stats.speed,
+    tempStamina: EnemyThree.stats.stamina
+}
 EnemyThree.description = 'low lifes trying to rob inoccent people they come accross'
 
 const EnemyFour = new Enemy()
@@ -56,6 +77,13 @@ EnemyFour.stats= {
     magic: 0,
     speed: 1,
     stamina: 5,
+}
+EnemyFour.tempStats = {
+    tempHp: EnemyFour.stats.hp,
+    tempMagic: EnemyFour.stats.magic,
+    tempPower: EnemyFour.stats.power,
+    tempSpeed: EnemyFour.stats.speed,
+    tempStamina: EnemyFour.stats.stamina
 }
 EnemyFour.description = 'wild boars destroy farmers land and will charge at anyone they see'
 
@@ -70,6 +98,13 @@ EnemyFive.stats= {
     speed: 0,
     stamina: 5,
 }
+EnemyFive.tempStats = {
+    tempHp: EnemyFive.stats.hp,
+    tempMagic: EnemyFive.stats.magic,
+    tempPower: EnemyFive.stats.power,
+    tempSpeed: EnemyFive.stats.speed,
+    tempStamina: EnemyFive.stats.stamina
+}
 EnemyFive.description = `slimes are immune to physical attacks and usually have items hidden inside their body`
 
 const EnemySix = new Enemy()
@@ -83,6 +118,13 @@ EnemySix.stats= {
     speed: 0,
     stamina: 5,
 }
+EnemySix.tempStats = {
+    tempHp: EnemySix.stats.hp,
+    tempMagic: EnemySix.stats.magic,
+    tempPower: EnemySix.stats.power,
+    tempSpeed: EnemySix.stats.speed,
+    tempStamina: EnemySix.stats.stamina
+}
 EnemySix.description = 'raised from their sleep skeletons are magically created monsters with no soul and will attack all they see'
 
 const EnemySeven = new Enemy()
@@ -95,6 +137,13 @@ EnemySeven.stats = {
     magic: 5,
     speed: 5,
     stamina: 5,
+}
+EnemySeven.tempStats = {
+    tempHp: EnemySeven.stats.hp,
+    tempMagic: EnemySeven.stats.magic,
+    tempPower: EnemySeven.stats.power,
+    tempSpeed: EnemySeven.stats.speed,
+    tempStamina: EnemySeven.stats.stamina
 }
 EnemySeven.description = 'Drake a ferocious draconic creature quick to temper and attack'
 

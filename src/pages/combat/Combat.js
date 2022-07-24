@@ -13,11 +13,12 @@ const Combat = () => {
 
     const Attack = () => {
         enemy = attackEnemy(enemy)
-        if(enemy.stats.hp < 1) {
+        if(enemy.tempStats.tempHp < 1) {
             alert('enemy died player has won')
             window.location.href = '/beginning'
         }
         hero = attackHero(hero)
+        return enemy & hero
     }
 
     useEffect(() => {
@@ -38,7 +39,7 @@ const Combat = () => {
                 <div className="enemy-info-container">
                     <img src={enemy.img} alt="enemy img" className="enemy-img" />
                     <h2>{enemy.name}</h2>
-                    <p>{enemy.stats.hp}</p>
+                    <p>hp: {enemy.tempStats.tempHp}/{enemy.stats.hp}</p>
                 </div>
             }
         </div>

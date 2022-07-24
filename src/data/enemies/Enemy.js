@@ -19,6 +19,14 @@ class Enemy {
         stamina: 5,
     }
 
+    tempStats = {
+        temphp: this.stats.hp,
+        tempPower: this.stats.power,
+        tempMagic: this.stats.magic,
+        tempSpeed: this.stats.speed,
+        tempStamina: this.stats.stamina
+    }
+
     skills= [
 
     ]

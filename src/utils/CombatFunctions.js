@@ -1,6 +1,6 @@
 
 const attackEnemy = (enemy) => {
-    enemy.stats.hp = enemy.stats.hp - 1
+    enemy.tempStats.tempHp = enemy.tempStats.tempHp - 1
     console.log(enemy)
     return enemy
 }

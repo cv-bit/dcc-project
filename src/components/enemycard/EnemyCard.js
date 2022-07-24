@@ -7,11 +7,11 @@ const EnemyCard = ({enemy}) => {
         <div className='enemycard-container flex-center-center column'>
             <h2>{enemy.name}</h2>
             <div className='enemy-stats-container flex wrap'>
-                <p>hp: {enemy.stats.hp}</p>
-                <p>power: {enemy.stats.power}</p>
-                <p>magic: {enemy.stats.magic}</p>
-                <p>speed: {enemy.stats.speed}</p>
-                <p>stamina: {enemy.stats.stamina}</p>
+                <p>hp: {enemy.tempStats.tempHp}/{enemy.stats.hp}</p>
+                <p>power: {enemy.tempStats.tempPower}/{enemy.stats.power}</p>
+                <p>magic: {enemy.tempStats.tempMagic}/{enemy.stats.magic}</p>
+                <p>speed: {enemy.tempStats.tempSpeed}/{enemy.stats.speed}</p>
+                <p>stamina: {enemy.tempStats.tempStamina}/{enemy.stats.stamina}</p>
             </div>
             <p>{enemy.description}</p>
         </div>

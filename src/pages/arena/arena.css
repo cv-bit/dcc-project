@@ -1,6 +1,7 @@
 .arena-container {
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    padding-top: 50px;
 }
 
 .arena-container > h2 {
