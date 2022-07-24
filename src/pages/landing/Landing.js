@@ -17,7 +17,7 @@ const Landing = () => {
           </div>
           
           <Link to="/start">start game</Link>
-          <Link to='/beginning'>continue</Link>
+          {localStorage.getItem('hero') && <Link to='/beginning'>continue</Link>}
         </div>
       </div>
     </div>
