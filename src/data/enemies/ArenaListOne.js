@@ -1,5 +1,5 @@
 import Enemy from "./Enemy";
-import EasyMonsterLoot from "../items/EasyMonsterLoot";
+// import EasyMonsterLoot from "../items/EasyMonsterLoot";
 
 //this is all enemy images temporary for now
 import GoblinImg from '../../assets/images/goblin.jpg'
