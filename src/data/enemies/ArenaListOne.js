@@ -1,4 +1,7 @@
 import Enemy from "./Enemy";
+import EasyMonsterLoot from "../items/EasyMonsterLoot";
+
+//this is all enemy images temporary for now
 import GoblinImg from '../../assets/images/goblin.jpg'
 import WolfImg from '../../assets/images/Wolfie.webp'
 import Bandit from '../../assets/images/bandit.png'
@@ -26,6 +29,7 @@ EnemyOne.tempStats = {
     tempStamina: EnemyOne.stats.stamina
 }
 EnemyOne.description = 'a green monster full of trickery'
+// EnemyOne.loot = [EasyMonsterLoot[0]]
 
 const EnemyTwo = new Enemy()
 
@@ -66,6 +70,7 @@ EnemyThree.tempStats = {
     tempStamina: EnemyThree.stats.stamina
 }
 EnemyThree.description = 'low lifes trying to rob inoccent people they come accross'
+// EnemyThree.loot = [EasyMonsterLoot[0]]
 
 const EnemyFour = new Enemy()
 
@@ -126,6 +131,7 @@ EnemySix.tempStats = {
     tempStamina: EnemySix.stats.stamina
 }
 EnemySix.description = 'raised from their sleep skeletons are magically created monsters with no soul and will attack all they see'
+// EnemySix.loot = [EasyMonsterLoot[0]]
 
 const EnemySeven = new Enemy()
 

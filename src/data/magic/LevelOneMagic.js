@@ -1,0 +1,1 @@
+//fire bolt, arcane missle, charge, shell, heal, power boost, haste, sleep

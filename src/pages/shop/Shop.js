@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemCard from '../../components/itemcard/ItemCard'
-import ItemList from '../../data/items/ItemList'
+import CommonItemList from '../../data/items/CommonItemList'
 import { Link } from 'react-router-dom'
 
 import './shop.css'
@@ -15,7 +15,7 @@ const Shop = () => {
         <p>meet npc's</p>
         <div className='item-list-container flex-center-center wrap text-center'>
           {
-            ItemList.map((item, key) => {
+            CommonItemList.map((item, key) => {
               return <ItemCard item={item} key={key} />
             })
           }

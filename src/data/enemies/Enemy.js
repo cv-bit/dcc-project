@@ -1,17 +1,17 @@
 
 class Enemy {
 
-    name= ''
+    name = ''
 
-    type= ''
+    type = ''
 
-    difficulty= ''
+    difficulty = ''
 
     description = ''
 
     img = ''
 
-    stats= {
+    stats = {
         hp: 0,
         power: 0,
         magic: 0,
@@ -27,15 +27,15 @@ class Enemy {
         tempStamina: this.stats.stamina
     }
 
-    skills= [
+    skills = [
 
     ]
 
-    abilities= [
+    abilities = [
 
     ]
 
-    loot= [
+    loot = [
 
     ]
     

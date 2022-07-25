@@ -140,7 +140,7 @@ ItemFourteen.useFunction = () => {
     alert(ItemFourteen.name + ' is ' + ItemFourteen.value + ' gold ')
 }
 
-const ItemList = [
+const CommonItemList = [
     ItemOne,
     ItemTwo,
     ItemThree,
@@ -158,4 +158,4 @@ const ItemList = [
 
 ]
 
-export default ItemList
+export default CommonItemList

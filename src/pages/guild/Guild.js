@@ -10,6 +10,10 @@ const Guild = () => {
         <p>coming soon</p>
         <p>from here you can aquire companions unlock story cards and go through training to learn cool abilities</p>
         <p>meet npc's</p>
+        <div>
+          <button className='guild-train-btn'>Train</button>
+          <button className='guild-magic-btn'>Buy magic</button>
+        </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { attackEnemy, attackHero } from '../../utils/CombatFunctions';
 
@@ -7,12 +7,13 @@ import './combat.css'
 const Combat = () => {
 
     const location = useLocation();
-    let enemy = location.state
+    const [enemy, setEnemy] = useState(location.state)
+    const [tempEnemy, setTempEnemy] = useState(enemy)
 
     let hero = JSON.parse(localStorage.getItem('hero'))
 
     const Attack = () => {
-        enemy = attackEnemy(enemy)
+        setTempEnemy(attackEnemy(enemy))
         if(enemy.tempStats.tempHp < 1) {
             alert('enemy died player has won')
             window.location.href = '/beginning'
@@ -22,8 +23,9 @@ const Combat = () => {
     }
 
     useEffect(() => {
-        console.log(enemy)
-    }, [enemy])
+        console.log(location.state)
+        setEnemy(tempEnemy)
+    }, [enemy, location.state, tempEnemy])
 
     const Items = () => {
         if(hero.items.length < 1) alert('you have no items')
