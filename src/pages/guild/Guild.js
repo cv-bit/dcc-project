@@ -13,6 +13,7 @@ const Guild = () => {
         <div>
           <button className='guild-train-btn'>Train</button>
           <button className='guild-magic-btn'>Buy magic</button>
+          <button className='guild-quest-btn'>get quests</button>
         </div>
     </div>
   )

@@ -18,3 +18,8 @@
     background-color: var(--epic-item);
     color: var(--primary-text-color);
 }
+
+.guild-quest-btn {
+    background-color: yellow;
+    color: var(--secondary-text-color);
+}
