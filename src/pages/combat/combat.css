@@ -30,7 +30,22 @@
 }   
 
 .combat-item-btn {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.combat-s-attack-btn {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+}
+
+.combat-d-attack-btn {
     background-color: var(--green-color);
+    color: var(--primary-text-color);
+}
+
+.combat-magic-btn {
+    background-color: var(--epic-item);
     color: var(--primary-text-color);
 }
 
