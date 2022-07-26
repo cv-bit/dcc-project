@@ -7,25 +7,25 @@ import './combat.css'
 const Combat = () => {
 
     const location = useLocation();
-    const [enemy, setEnemy] = useState(location.state)
-    const [tempEnemy, setTempEnemy] = useState(enemy)
+    let enemy = location.state
+    const [enemyDamage, setEnemyDamage] = useState(0)
+    const [playerDamage, setPlayerDamage] = useState(0)
 
     let hero = JSON.parse(localStorage.getItem('hero'))
 
     const Attack = () => {
-        setTempEnemy(attackEnemy(enemy))
-        if(enemy.tempStats.tempHp < 1) {
+        setEnemyDamage(enemyDamage +1)
+        if(enemyDamage === enemy.tempStats.tempHp - 1) {
             alert('enemy died player has won')
             window.location.href = '/beginning'
         }
-        hero = attackHero(hero)
-        return enemy & hero
+        setPlayerDamage(playerDamage + 1)
+        if(playerDamage === hero.tempStats.tempHp - 1) {
+            alert('your hero was defeated')
+            localStorage.removeItem('hero')
+            window.location.href = '/start'
+        }
     }
-
-    useEffect(() => {
-        console.log(location.state)
-        setEnemy(tempEnemy)
-    }, [enemy, location.state, tempEnemy])
 
     const Items = () => {
         if(hero.items.length < 1) alert('you have no items')
@@ -41,14 +41,14 @@ const Combat = () => {
                 <div className="enemy-info-container">
                     <img src={enemy.img} alt="enemy img" className="enemy-img" />
                     <h2>{enemy.name}</h2>
-                    <p>hp: {enemy.tempStats.tempHp}/{enemy.stats.hp}</p>
+                    <p>hp: {enemy.tempStats.tempHp - enemyDamage}/{enemy.stats.hp}</p>
                 </div>
             }
         </div>
         <div className='hero-control-bar flex-align-center'>
             <div>
                 <h2>{hero.name}</h2>
-                <p>hp: {hero.tempStats.tempHp}/{hero.stats.hp}</p>
+                <p>hp: {hero.tempStats.tempHp - playerDamage}/{hero.stats.hp}</p>
             </div>
             <div>
                 <button className='combat-attack-btn' onClick={() => Attack()}>Attack</button>

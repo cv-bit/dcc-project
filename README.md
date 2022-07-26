@@ -40,6 +40,9 @@ adding tavern and dock pages add armor to hero class, adding quests to story car
 day 7 - 8
 working on shop and items and also adding temp stat values for combat and ability to equip stat boosts
 
+day 8 - 9
+trial combat system working
+
 Idea
 
 this game will be a text based rpg taking inspiration from DnD and DCC
