@@ -16,13 +16,13 @@ const Combat = () => {
         setEnemyDamage(enemyDamage +1)
         if(enemyDamage === enemy.tempStats.tempHp - 1) {
             alert('enemy died player has won')
-            window.location.href = '/beginning'
+            window.location.href = 'https://dcc-project.netlify.app/beginning'
         }
         setPlayerDamage(playerDamage + 1)
         if(playerDamage === hero.tempStats.tempHp - 1) {
             alert('your hero was defeated')
             localStorage.removeItem('hero')
-            window.location.href = '/start'
+            window.location.href = 'https://dcc-project.netlify.app/start'
         }
     }
 
