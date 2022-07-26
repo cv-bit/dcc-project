@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { attackEnemy, attackHero } from '../../utils/CombatFunctions';
 
 import './combat.css'
 
