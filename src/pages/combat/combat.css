@@ -15,7 +15,7 @@
 
 .hero-control-bar {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: var(--common-item);
     color: var(--secondary-text-color);
     padding: 15px;
