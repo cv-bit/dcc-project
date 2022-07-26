@@ -17,6 +17,8 @@ const Combat = () => {
         if(enemyDamage === enemy.tempStats.tempHp - 1) {
             alert('enemy died player has won')
             window.location.href = '/beginning'
+            hero.tempStats.tempHp -= playerDamage
+            return localStorage.setItem('hero', JSON.stringify(hero))
         }
         setPlayerDamage(playerDamage + 1)
         if(playerDamage === hero.tempStats.tempHp - 1) {
