@@ -27,11 +27,13 @@
 .combat-attack-btn {
     background-color: var(--secondary-btn-color);
     color: var(--primary-text-color);
+    box-shadow: 0 0 5px #000;
 }   
 
 .combat-item-btn {
-    background-color: var(--primary-color);
+    background-color: var(--green-color);
     color: var(--primary-text-color);
+    box-shadow: 0 0 5px #000;
 }
 
 .combat-s-attack-btn {
@@ -47,10 +49,17 @@
 .combat-magic-btn {
     background-color: var(--epic-item);
     color: var(--primary-text-color);
+    box-shadow: 0 0 5px #000;
+}
+
+.combat-defend-btn {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+    box-shadow: 0 0 5px #000;
 }
 
 .enemy-info-container {
-    width: 100%;
+    width: fit-content;
     height: 100%;
 }
 
@@ -59,4 +68,16 @@
     height: 150px;
     border-radius: 150px;
     background-color: #fff;
+}
+
+.hp-guage {
+    height: 20px;
+    border: 1px solid #333;
+    padding: 1px;
+}
+
+.hp-fill {
+    background-color: red;
+    height: 100%;
+    transition: all 200ms ease-in;
 }
