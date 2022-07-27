@@ -63,12 +63,20 @@ const Combat = () => {
                     </div>
                 }
             </div>
-            <div className='hero-control-bar flex-align-center'>
-                <div>
-                    <h2>{hero.name}</h2>
-                    <p>hp: {hero.tempStats.tempHp - playerDamage}/{hero.stats.hp}</p>
-                    <div className="hp-guage">
-                        <div className="hp-fill" style={{width: hpWidth1 * 100 +"%"}}></div>
+            <div className='hero-control-bar flex-align-center column'>
+                <div className="combat-hero-container flex">
+                    <div>
+                        <h2>{hero.name}</h2>
+                        <p>hp: {hero.tempStats.tempHp - playerDamage}/{hero.stats.hp}</p>
+                        <div className="hp-guage">
+                            <div className="hp-fill" style={{width: hpWidth1 * 100 +"%"}}></div>
+                        </div>
+                    </div>
+                    <div className="combat-hero-stats flex column">
+                        <p>power: {hero.tempStats.tempPower}/{hero.stats.power}</p>
+                        <p>magic: {hero.tempStats.tempMagic}/{hero.stats.magic}</p>
+                        <p>speed: {hero.tempStats.tempSpeed}/{hero.stats.speed}</p>
+                        <p>stamina: {hero.tempStats.tempStamina}/{hero.stats.stamina}</p>
                     </div>
                 </div>
                 <div className="flex-center-center">
