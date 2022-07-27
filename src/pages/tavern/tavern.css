@@ -3,14 +3,33 @@
     height: 100%;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .tavern-container > h2 {
     color: orange;
 }
 
+.barmaid-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .tavern-rest-btn {
     background-color: orange;
     color: var(--primary-text-color);
     margin: 10px;
+}
+
+.barmaid-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 15px;
 }

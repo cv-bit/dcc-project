@@ -7,6 +7,8 @@ class NPC  {
 
     type= ''
 
+    img = ''
+
     dialog= [
 
     ]
