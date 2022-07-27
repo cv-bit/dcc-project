@@ -80,15 +80,15 @@ const Combat = () => {
                     </div>
                 </div>
                 <div className="flex-center-center">
-                    <div >
-                        <button className='combat-attack-btn' onClick={() => Attack()}>Attack</button>
-                    </div>
-                    <div className="flex column">
-                        <button className='combat-magic-btn'>Magic</button>
-                        <button className='combat-item-btn' onClick={() => Items()}>Items</button>
-                    </div>
                     <div>
                         <button className="combat-defend-btn">Defend</button>
+                    </div>
+                    <div className="flex column">
+                        <button className='combat-attack-btn' onClick={() => Attack()}>Attack</button>
+                        <button className='combat-item-btn' onClick={() => Items()}>Items</button>
+                    </div>
+                    <div >
+                        <button className='combat-magic-btn'>Magic</button>
                     </div>
                 </div>
             </div>
