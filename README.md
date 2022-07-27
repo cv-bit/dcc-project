@@ -42,7 +42,7 @@ working on shop and items and also adding temp stat values for combat and abilit
 
 day 8 - 9
 trial combat system working add enemy and player health bars and change styles to hero combat controller
-start work on power levels
+add power levels you can now win xp and gold from enemies and tavern now charges 1 gold added npc adaia
 
 Idea
 
