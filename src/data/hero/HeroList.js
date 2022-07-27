@@ -20,6 +20,7 @@ HeroOne.tempStats = {
     tempSpeed: HeroOne.stats.speed,
     tempStamina: HeroOne.stats.stamina
 }
+HeroOne.powerLevel = (HeroOne.stats.hp + HeroOne.stats.power + HeroOne.stats.magic + HeroOne.stats.speed + HeroOne.stats.stamina) * 5
 
 const HeroTwo = new HeroClass()
 
@@ -41,6 +42,8 @@ HeroTwo.tempStats = {
     tempSpeed: HeroTwo.stats.speed,
     tempStamina: HeroTwo.stats.stamina
 }
+HeroOne.powerLevel = (HeroOne.stats.hp + HeroOne.stats.power + HeroOne.stats.magic + HeroOne.stats.speed + HeroOne.stats.stamina) * 5
+
 
 const HeroThree = new HeroClass()
 
@@ -62,6 +65,8 @@ HeroThree.tempStats = {
     tempSpeed: HeroThree.stats.speed,
     tempStamina: HeroThree.stats.stamina
 }
+HeroThree.powerLevel = (HeroThree.stats.hp + HeroThree.stats.power + HeroThree.stats.magic + HeroThree.stats.speed + HeroThree.stats.stamina) * 5
+
 
 const HeroFour = new HeroClass()
 
@@ -83,6 +88,8 @@ HeroFour.tempStats = {
     tempSpeed: HeroFour.stats.speed,
     tempStamina: HeroFour.stats.stamina
 }
+HeroFour.powerLevel = (HeroFour.stats.hp + HeroFour.stats.power + HeroFour.stats.magic + HeroFour.stats.speed + HeroFour.stats.stamina) * 5
+
 
 const HeroFive = new HeroClass()
 
@@ -104,6 +111,8 @@ HeroFive.tempStats = {
     tempSpeed: HeroFive.stats.speed,
     tempStamina: HeroFive.stats.stamina
 }
+HeroFive.powerLevel = (HeroFive.stats.hp + HeroFive.stats.power + HeroFive.stats.magic + HeroFive.stats.speed + HeroFive.stats.stamina) * 5
+
 
 const HeroSix = new HeroClass()
 
@@ -125,6 +134,8 @@ HeroSix.tempStats = {
     tempSpeed: HeroSix.stats.speed,
     tempStamina: HeroSix.stats.stamina
 }
+HeroSix.powerLevel = (HeroSix.stats.hp + HeroSix.stats.power + HeroSix.stats.magic + HeroSix.stats.speed + HeroSix.stats.stamina) * 5
+
 
 const HeroList = [
     HeroOne,

@@ -22,11 +22,13 @@ class HeroClass {
         tempStamina: this.stats.stamina,
     }
 
+    powerLevel = 0
+
     armor = 0
 
     occupation= ""
 
-    Token=""
+    Token=[]
 
     image= ""
 

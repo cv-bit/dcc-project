@@ -15,6 +15,8 @@ const Beginning = () => {
     setMyHero(JSON.parse(localStorage.getItem('hero')))
   }, [])
 
+  console.log(myHero)
+
   return (
     <div className='beginning-container min-width-100 min-height-100 flex-center-center column'>
         <div className='beginning-container-intro flex-center-center column text-center'>
@@ -29,6 +31,7 @@ const Beginning = () => {
             <Link className='forest-btn' to='/forest'>Forest</Link>
           </div>
         </div>
+        <h3>power level: {myHero.powerLevel && myHero.powerLevel}</h3>
         {
           myHero && myHero.name && <div className='flex-justify-center wrap'>
           <HeroCard hero={myHero} /> <HeroInfoCard hero={myHero}/>
