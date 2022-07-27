@@ -16,6 +16,12 @@ const HeroCard = ({hero, func}) => {
                 <p>xp: {hero.stats.xp}</p>
             </div>
             <p>focus: {hero.focus}</p>
+            {
+                hero.items.length > 0 && <div>
+                <button className='hero-info-equip-btn'>items</button>
+                <button className='hero-info-equip-btn'>equip</button>
+                </div>
+            }
         </div>
     )
 }
