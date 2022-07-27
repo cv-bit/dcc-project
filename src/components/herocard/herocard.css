@@ -28,6 +28,11 @@
     transform: scale(105%);
 }
 
+.heroinfo-item-container {
+    max-height: 175px;
+    overflow-y: auto;
+}
+
 
 .herocard-container h2 {
     margin: 5px;
