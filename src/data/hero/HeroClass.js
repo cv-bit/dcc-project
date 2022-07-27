@@ -65,6 +65,8 @@ class HeroClass {
     ]
 
     gold= 0
+
+    trainingLevel = 1
 }
 
 export default HeroClass

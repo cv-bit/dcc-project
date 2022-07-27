@@ -31,7 +31,7 @@ const Beginning = () => {
             <Link className='forest-btn' to='/forest'>Forest</Link>
           </div>
         </div>
-        <h3>power level: {myHero.powerLevel && myHero.powerLevel}</h3>
+        <h3>power level: {myHero && myHero.powerLevel && myHero.powerLevel}</h3>
         {
           myHero && myHero.name && <div className='flex-justify-center wrap'>
           <HeroCard hero={myHero} /> <HeroInfoCard hero={myHero}/>
