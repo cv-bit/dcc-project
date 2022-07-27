@@ -64,7 +64,7 @@ class HeroClass {
 
     ]
 
-    gold= 10
+    gold= 0
 }
 
 export default HeroClass

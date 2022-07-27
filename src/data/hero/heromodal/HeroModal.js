@@ -13,6 +13,7 @@ const HeroModal = ({hero, hasRolled, setHasRolled, setHeroModal}) => {
 
     const saveHero = () => {
         hero.powerLevel = (hero.stats.hp + hero.stats.power + hero.stats.magic + hero.stats.speed + hero.stats.stamina )* 5
+        hero.gold = diceRoller(10, true)
         localStorage.setItem('hero', JSON.stringify(hero))
         alert('hero saved')
         setHeroModal(false)
