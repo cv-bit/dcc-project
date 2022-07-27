@@ -13,7 +13,7 @@ const HeroCard = ({hero, func}) => {
                 <p>speed: {hero.tempStats.tempSpeed}/{hero.stats.speed}</p>
                 <p>stamina: {hero.tempStats.tempStamina}/{hero.stats.stamina}</p>
                 <p>luck: {hero.stats.luck}</p>
-                <p>xp: {hero.xp}</p>
+                <p>xp: {hero.stats.xp}</p>
             </div>
             <p>focus: {hero.focus}</p>
             {

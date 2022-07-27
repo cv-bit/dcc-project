@@ -21,7 +21,7 @@ const Combat = () => {
         setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + 1)) / enemy.stats.hp))
         if(enemyDamage === enemy.tempStats.tempHp - 1) {
             hero.tempStats.tempHp -= playerDamage
-            hero.xp += enemy.xp
+            hero.stats.xp += enemy.xp
             hero.gold += diceRoller(enemy.gold, true)
             alert('enemy died player has won' )
             localStorage.setItem('hero', JSON.stringify(hero))
