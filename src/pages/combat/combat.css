@@ -3,22 +3,26 @@
     height: 100%;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
-    padding: 15px 0 100px 0;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .enemy-battle-container {
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
     flex-grow: 1;
 }
 
 .hero-control-bar {
-    width: 100%;
+    width: 90%;
+    max-width: 800px;
     min-height: 100px;
     background-color: var(--common-item);
     color: var(--secondary-text-color);
     padding: 15px;
+    margin: 15px;
     position: absolute;
     bottom: 0;
     justify-content: space-between;
@@ -59,8 +63,17 @@
 }
 
 .enemy-info-container {
+    margin-top: 100px;
     width: fit-content;
     height: 100%;
+}
+
+.flee-btn {
+    margin: 15px;
+}
+
+.flee-btn > h2 {
+    margin: 10px;
 }
 
 .enemy-img {
@@ -71,13 +84,12 @@
 }
 
 .hp-guage {
+    background-color: red;
     height: 20px;
-    border: 1px solid #333;
-    padding: 1px;
 }
 
 .hp-fill {
-    background-color: red;
+    background-color: var(--green-color);
     height: 100%;
     transition: all 200ms ease-in;
 }

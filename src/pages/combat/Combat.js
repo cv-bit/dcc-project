@@ -1,5 +1,6 @@
 import {  useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
+import arenaImage from '../../assets/images/arena-image.jpg'
 
 import './combat.css'
 
@@ -48,12 +49,14 @@ const Combat = () => {
     }, [playerDamage])
 
     return (
-        <div className='combat-container min-width-100 min-height-100 flex-align-center column text-center'>
-        <Link className='home-btn' to='/beginning'>Flee</Link>
-        <h2>Battle</h2>
-            <div className='enemy-battle-container flex-center-center'>
+        <div className='combat-container min-width-100 min-height-100 flex-center-center column text-center' style={{backgroundImage: `url(${arenaImage})`}}>
+            <div className='enemy-battle-container flex-justify-center'>
                 { enemy && enemy.stats.hp &&
                     <div className="enemy-info-container">
+                        <div className="flee-btn">
+                            <Link className='home-btn' to='/beginning'>Flee</Link>
+                            <h2>Battle</h2>
+                        </div>
                         <img src={enemy.img} alt="enemy img" className="enemy-img" />
                         <h2>{enemy.name}</h2>
                         <p>hp: {enemy.tempStats.tempHp - enemyDamage}/{enemy.stats.hp}</p>
