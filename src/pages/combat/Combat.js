@@ -15,8 +15,6 @@ const Combat = () => {
     const [playerDamage, setPlayerDamage] = useState(0)
     const [hpWidth1, setHpWidth1] = useState((hero.tempStats.tempHp / hero.stats.hp))
     const [hpWidth2, setHpWidth2] = useState((enemy.tempStats.tempHp / enemy.stats.hp))
-
-    console.log(enemy, hero)
     
     const Attack = () => {
         setEnemyDamage(enemyDamage +1)
@@ -25,7 +23,7 @@ const Combat = () => {
             hero.tempStats.tempHp -= playerDamage
             hero.xp += enemy.xp
             hero.gold += diceRoller(enemy.gold, true)
-            alert('enemy died player has won, you recieve ', enemy.xp, ' xp' )
+            alert('enemy died player has won' )
             localStorage.setItem('hero', JSON.stringify(hero))
             return window.location.href = '/beginning'
         }
