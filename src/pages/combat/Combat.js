@@ -1,6 +1,7 @@
 import {  useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import arenaImage from '../../assets/images/arena-image.jpg'
+import { diceRoller } from "../../utils/DiceRoller";
 
 import './combat.css'
 
@@ -14,15 +15,19 @@ const Combat = () => {
     const [playerDamage, setPlayerDamage] = useState(0)
     const [hpWidth1, setHpWidth1] = useState((hero.tempStats.tempHp / hero.stats.hp))
     const [hpWidth2, setHpWidth2] = useState((enemy.tempStats.tempHp / enemy.stats.hp))
+
+    console.log(enemy, hero)
     
     const Attack = () => {
         setEnemyDamage(enemyDamage +1)
         setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + 1)) / enemy.stats.hp))
         if(enemyDamage === enemy.tempStats.tempHp - 1) {
-            alert('enemy died player has won')
-            window.location.href = '/beginning'
             hero.tempStats.tempHp -= playerDamage
-            return localStorage.setItem('hero', JSON.stringify(hero))
+            hero.xp += enemy.xp
+            hero.gold += diceRoller(enemy.gold, true)
+            alert('enemy died player has won, you recieve ', enemy.xp, ' xp' )
+            localStorage.setItem('hero', JSON.stringify(hero))
+            return window.location.href = '/beginning'
         }
         setPlayerDamage(playerDamage + 1)
         setHpWidth1(((hero.tempStats.tempHp - (playerDamage + 1)) / hero.stats.hp))

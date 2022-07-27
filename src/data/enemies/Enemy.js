@@ -38,6 +38,10 @@ class Enemy {
     loot = [
 
     ]
+
+    xp = 0
+
+    gold = 0
     
 }
 
