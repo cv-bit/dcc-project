@@ -20,11 +20,10 @@ const HeroEquipModal = ({hero, setIsEquip}) => {
             hero.equip[item.type] = item
         }
         if(item.type === 'armor') {
-            if (hero.equip['armor']) hero.armor -= hero.equip['armor'].stats
-            hero.armor += item.stats
+            hero.armor = item.stats
             hero.equip[item.type] = item
         }
-        console.log(hero)
+        
         localStorage.setItem('hero', JSON.stringify(hero))
         alert('hero has equiped the ' + item.name)
         setIsEquip(false)
