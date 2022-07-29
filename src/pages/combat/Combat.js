@@ -3,6 +3,8 @@ import { useLocation, Link } from "react-router-dom";
 import arenaImage from '../../assets/images/arena-image.jpg'
 import { diceRoller } from "../../utils/DiceRoller";
 
+import {BiShield} from 'react-icons/bi'
+
 import './combat.css'
 
 const Combat = () => {
@@ -27,8 +29,8 @@ const Combat = () => {
             localStorage.setItem('hero', JSON.stringify(hero))
             return window.location.href = '/beginning'
         }
-        setPlayerDamage((playerDamage + 1) - hero.armor)
-        setHpWidth1(((hero.tempStats.tempHp - (playerDamage + 1) + hero.armor) / hero.stats.hp))
+        setPlayerDamage((playerDamage + enemy.damage) - hero.armor)
+        setHpWidth1(((hero.tempStats.tempHp - (playerDamage + enemy.damage) + hero.armor) / hero.stats.hp))
         if(playerDamage >= hero.tempStats.tempHp - 1) {
             alert('your hero was defeated')
             localStorage.removeItem('hero')
@@ -73,6 +75,7 @@ const Combat = () => {
                 <div className="combat-hero-container flex">
                     <div>
                         <h2>{hero.name}</h2>
+                        {hero.armor > 0 && <div className="flex-center-center"><BiShield /> <p>{hero.armor}</p></div>}
                         <p>hp: {hero.tempStats.tempHp - playerDamage}/{hero.stats.hp}</p>
                         <div className="hp-guage">
                             <div className="hp-fill" style={{width: hpWidth1 * 100 +"%"}}></div>

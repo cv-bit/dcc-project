@@ -14,6 +14,7 @@ const EnemyOne = new Enemy()
 
 EnemyOne.name = 'goblin'
 EnemyOne.img = GoblinImg
+EnemyOne.damage = 1
 EnemyOne.stats= {
     hp: 3,
     power: 1,
@@ -36,6 +37,7 @@ const EnemyTwo = new Enemy()
 
 EnemyTwo.name = 'wolf'
 EnemyTwo.img = WolfImg
+EnemyTwo.damage = 1
 EnemyTwo.stats= {
     hp: 3,
     power: 1,
@@ -57,6 +59,7 @@ const EnemyThree = new Enemy()
 
 EnemyThree.name = 'bandit'
 EnemyThree.img = Bandit
+EnemyThree.damage = 2
 EnemyThree.stats= {
     hp: 4,
     power: 1,
@@ -78,6 +81,7 @@ const EnemyFour = new Enemy()
 
 EnemyFour.name = 'boar'
 EnemyFour.img = Boar
+EnemyFour.damage = 2
 EnemyFour.stats= {
     hp: 4,
     power: 1,
@@ -99,6 +103,7 @@ const EnemyFive = new Enemy()
 
 EnemyFive.name = 'slime'
 EnemyFive.img = Slime
+EnemyFive.damage = 1
 EnemyFive.stats= {
     hp: 1,
     power: 0,
@@ -120,6 +125,7 @@ const EnemySix = new Enemy()
 
 EnemySix.name = 'skeleton'
 EnemySix.img = Skeleton
+EnemySix.damage = 3
 EnemySix.stats= {
     hp: 5,
     power: 1,
@@ -143,6 +149,7 @@ const EnemySeven = new Enemy()
 
 EnemySeven.name = 'Drake'
 EnemySeven.img = Drake
+EnemySeven.damage = 4
 EnemySeven.stats = {
     hp: 10,
     power: 5,

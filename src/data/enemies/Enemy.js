@@ -11,6 +11,8 @@ class Enemy {
 
     img = ''
 
+    damage = 0
+
     stats = {
         hp: 0,
         power: 0,
