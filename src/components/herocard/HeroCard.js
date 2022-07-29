@@ -1,10 +1,19 @@
 
+import { useState } from 'react'
+import HeroEquipModal from './HeroEquipModal'
+
 import './herocard.css'
 
 const HeroCard = ({hero, func}) => {
 
+    const [isEquip, setIsEquip] = useState(false)
+
+    const equipItem = () => {
+        setIsEquip(true)
+    }
+
     return (
-        <div className='herocard-container flex-center-center column' onClick={() => func(hero)}>
+        <div className='herocard-container flex-center-center column' onClick={() => func && func(hero)}>
             <h2>{hero.name}</h2>
             <div className='hero-stats-container flex wrap'>
                 <p>hp: {hero.tempStats.tempHp}/{hero.stats.hp}</p>
@@ -19,9 +28,11 @@ const HeroCard = ({hero, func}) => {
             {
                 hero.items.length > 0 && <div>
                 <button className='hero-info-equip-btn'>items</button>
-                <button className='hero-info-equip-btn'>equip</button>
+                <button className='hero-info-equip-btn' onClick={() => equipItem()}>equip</button>
                 </div>
             }
+
+            {isEquip && <HeroEquipModal hero={hero} setIsEquip={setIsEquip}/>}
         </div>
     )
 }

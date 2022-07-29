@@ -10,9 +10,9 @@ class ItemClass {
 
     rarity = ''
 
-    useFunction = () => {
-        console.log('working')
-    }
+    equiped = false
+
+    stats = 0
 }
 
 export default ItemClass

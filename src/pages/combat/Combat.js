@@ -17,9 +17,9 @@ const Combat = () => {
     const [hpWidth2, setHpWidth2] = useState((enemy.tempStats.tempHp / enemy.stats.hp))
     
     const Attack = () => {
-        setEnemyDamage(enemyDamage +1)
-        setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + 1)) / enemy.stats.hp))
-        if(enemyDamage === enemy.tempStats.tempHp - 1) {
+        setEnemyDamage(enemyDamage + hero.damage)
+        setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + hero.damage)) / enemy.stats.hp))
+        if(enemyDamage >= enemy.tempStats.tempHp - hero.damage) {
             hero.tempStats.tempHp -= playerDamage
             hero.stats.xp += enemy.xp
             hero.gold += diceRoller(enemy.gold, true)
@@ -27,9 +27,9 @@ const Combat = () => {
             localStorage.setItem('hero', JSON.stringify(hero))
             return window.location.href = '/beginning'
         }
-        setPlayerDamage(playerDamage + 1)
-        setHpWidth1(((hero.tempStats.tempHp - (playerDamage + 1)) / hero.stats.hp))
-        if(playerDamage === hero.tempStats.tempHp - 1) {
+        setPlayerDamage((playerDamage + 1) - hero.armor)
+        setHpWidth1(((hero.tempStats.tempHp - (playerDamage + 1) + hero.armor) / hero.stats.hp))
+        if(playerDamage >= hero.tempStats.tempHp - 1) {
             alert('your hero was defeated')
             localStorage.removeItem('hero')
             window.location.href = '/'
@@ -48,8 +48,8 @@ const Combat = () => {
     }
 
     useEffect(() => {
-        console.log()
-    }, [playerDamage])
+        console.log(enemyDamage)
+    }, [enemyDamage])
 
     return (
         <div className='combat-container min-width-100 min-height-100 flex-center-center column text-center' style={{backgroundImage: `url(${arenaImage})`}}>

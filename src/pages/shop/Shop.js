@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 import './shop.css'
 
 const Shop = () => {
+
+  console.log(CommonItemList)
+
   return (
     <div className='shop-container min-width-100 min-height-100 flex-center-center column text-center'>
         <h2>Market</h2> <Link className='home-btn' to='/beginning'>return to Town</Link>

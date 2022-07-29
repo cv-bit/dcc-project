@@ -26,6 +26,8 @@ class HeroClass {
 
     armor = 0
 
+    damage = 1
+
     occupation= ""
 
     Token=[]
@@ -46,7 +48,7 @@ class HeroClass {
         belt: '',
         back: '',
         weapon: '',
-        armor: ''
+        armor: []
     }
 
     inventory = [

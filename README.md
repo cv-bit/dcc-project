@@ -44,6 +44,9 @@ day 8 - 9
 trial combat system working add enemy and player health bars and change styles to hero combat controller
 add power levels you can now win xp and gold from enemies and tavern now charges 1 gold added npc adaia
 
+day 9 - 10 
+adding equip item functionality
+
 Idea
 
 this game will be a text based rpg taking inspiration from DnD and DCC
