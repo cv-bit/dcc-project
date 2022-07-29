@@ -4,6 +4,7 @@ import arenaImage from '../../assets/images/arena-image.jpg'
 import { diceRoller } from "../../utils/DiceRoller";
 
 import {BiShield} from 'react-icons/bi'
+import {GiBroadsword} from 'react-icons/gi'
 
 import './combat.css'
 
@@ -75,7 +76,10 @@ const Combat = () => {
                 <div className="combat-hero-container flex">
                     <div>
                         <h2>{hero.name}</h2>
-                        {hero.armor > 0 && <div className="flex-center-center"><BiShield /> <p>{hero.armor}</p></div>}
+                        {<div className="flex-center-center">
+                            {hero.armor > 0 && <div className="flex margin-5"><BiShield /> <p>{hero.armor}</p></div>}
+                            <GiBroadsword /> <p>{hero.damage}</p>
+                        </div>}
                         <p>hp: {hero.tempStats.tempHp - playerDamage}/{hero.stats.hp}</p>
                         <div className="hp-guage">
                             <div className="hp-fill" style={{width: hpWidth1 * 100 +"%"}}></div>

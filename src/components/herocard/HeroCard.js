@@ -2,6 +2,9 @@
 import { useState } from 'react'
 import HeroEquipModal from './HeroEquipModal'
 
+import {BiShield} from 'react-icons/bi'
+import {GiBroadsword} from 'react-icons/gi'
+
 import './herocard.css'
 
 const HeroCard = ({hero, func}) => {
@@ -23,6 +26,10 @@ const HeroCard = ({hero, func}) => {
                 <p>stamina: {hero.tempStats.tempStamina}/{hero.stats.stamina}</p>
                 <p>luck: {hero.stats.luck}</p>
                 <p>xp: {hero.stats.xp}</p>
+            </div>
+            <div className="flex-center-center">
+                <div className="flex margin-5"><BiShield /> <p>{hero.armor}</p></div>
+                <GiBroadsword /> <p>{hero.damage}</p>
             </div>
             <p>focus: {hero.focus}</p>
             {
