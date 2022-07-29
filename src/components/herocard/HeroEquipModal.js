@@ -4,8 +4,6 @@ const HeroEquipModal = ({hero, setIsEquip}) => {
 
     let heroEquipItems = []
     
-    console.log(hero)
-
     hero.items.forEach(item => {
         if(item.type === 'weapon' || item.type === 'armor') {
             heroEquipItems.push(item)
