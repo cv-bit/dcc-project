@@ -30,7 +30,7 @@ const NewStart = () => {
       <div className='newStart-continue-container flex-center-center column height-100'>
         <h2>new game dialog</h2> <Link className='home-btn' to='/'>return to home page</Link>
         <p className='text-center'>here you will be able to create a hero to adventure with</p>
-        {hasHero && hasHero.name && <p>my hero: {hasHero.name}</p>}
+        {hasHero && hasHero.name && <p style={{marginTop: "15px"}}>my hero: {hasHero.name}</p>}
         {hasHero && hasHero.name && <Link className='create-party-link' to="/beginning" >continue</Link>}
       </div>
       <div className='newStart-hero-container flex-center-center wrap text-center'>
