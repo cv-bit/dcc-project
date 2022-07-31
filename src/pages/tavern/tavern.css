@@ -33,3 +33,8 @@
     background-position: center;
     margin: 15px;
 }
+
+.tavern-games-btn {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+}

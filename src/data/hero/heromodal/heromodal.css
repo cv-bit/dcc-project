@@ -1,9 +1,10 @@
 
 .heromodal-container {
-    background-color: var(--secondary-color);
+    background-color: #ddb284;
     color: var(--secondary-text-color);
     width: 400px;
     height: 400px;
+    box-shadow: inset 0 0 50px #000;
     border-radius: 5px;
     position: absolute;
     top: 50%;

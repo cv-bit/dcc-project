@@ -20,6 +20,7 @@ const storyFour = new Quest()
 
 storyFour.name = 'the mage tower'
 storyFour.value = 5
+storyFour.difficulty = 2
 
 const storyFive = new Quest()
 

@@ -8,8 +8,8 @@ const WizardModal = ({hero, setBuyingMagic}) => {
         <h3>level one spells</h3>
         {
             levelOneMagic.map((magic) => {
-                return <div className='magic-item margin-5'>
-                            <p>{magic.name}</p>
+                return <div className='magic-item margin-5 flex-align-center'>
+                            <h4 style={{margin: '0', width: '100%'}}>{magic.name}: </h4>
                             <p>cost: {magic.value} gold</p>
                         </div>
             })

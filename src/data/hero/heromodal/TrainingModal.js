@@ -28,9 +28,10 @@ const HeroModal = ({hero, setTraining}) => {
     return (
         <div className='heromodal-container flex-center-center column'>
             <h2>Hello {hero.name}</h2>
-            <p>care to do some training?</p>
+            <h4 className='margin-5'>Trainer: care to do some training?</h4>
             <p>it's gonna cost you {(hero.trainingLevel * 7) - 2} gold</p>
-            <button className='heromodal-stat-btn' onClick={() => hero.stats.xp >= (hero.trainingLevel * 15) - 5 && hero.gold > (hero.trainingLevel * 7) - 2 ? (setRollResuluts(diceRoller(3, statRolls))) : notReady()}>{(hero.trainingLevel * 15) - 5} xp</button>
+            <p style={{marginTop: '0'}}>and you're gonna need {(hero.trainingLevel * 15) - 5} xp </p>
+            <button className='heromodal-stat-btn' onClick={() => hero.stats.xp >= (hero.trainingLevel * 15) - 5 && hero.gold > (hero.trainingLevel * 7) - 2 ? (setRollResuluts(diceRoller(3, statRolls))) : notReady()}>train</button>
             <br/>
             {rollResults > 0 && <p>stat points to distribute {rollResults}</p>}
 

@@ -3,10 +3,25 @@
     height: 100%;
     background-color: var(--primary-color);
     color: var(--primary-text-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.guild-container > h2 {
+.guild-clerk-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.guild-clerk-container > h2 {
     color: var(--green-color);
+    margin: 10px;
+}
+
+.guild-clerk-container p {
+    margin: 5px;
 }
 
 .guild-train-btn {
@@ -24,11 +39,17 @@
     color: var(--secondary-text-color);
 }
 
+.guild-hire-btn {
+    background-color: #333;
+    color: var(--primary-text-color);
+}
+
 .wizard-modal-container {
-    background-color: var(--secondary-color);
+    background-color: #ddb284;
     color: var(--secondary-text-color);
     width: 400px;
     height: 400px;
+    box-shadow: inset 0 0 50px #000;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -47,14 +68,17 @@
 }
 
 .magic-item {
+    width: 70%;
+    background-color: #fff;
     cursor: pointer;
 }
 
 .quest-modal-container {
-    background-color: var(--secondary-color);
+    background-color: #ddb284;
     color: var(--secondary-text-color);
     width: 400px;
     height: 400px;
+    box-shadow: inset 0 0 50px #000;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -73,5 +97,8 @@
 }
 
 .quest-item {
+    min-height: 75px;
+    padding: 10px;
+    background-color: #fff;
     cursor: pointer;
 }
