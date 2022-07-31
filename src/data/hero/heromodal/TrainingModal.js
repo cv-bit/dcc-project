@@ -38,24 +38,24 @@ const HeroModal = ({hero, setTraining}) => {
             <div className=''>
                 <div className='flex-center-center width-100'>
                     <div>
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>hp: {hero.stats.hp}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusHp(hero) & setRollResuluts(rollResults -1)}/> 
                         </div>
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>power: {hero.stats.power}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusPower(hero) & setRollResuluts(rollResults -1)}/> 
                         </div>
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>magic: {hero.stats.magic}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusMagic(hero) & setRollResuluts(rollResults -1)}/>
                         </div>
                     </div>
                     <div>
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>speed: {hero.stats.speed}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusSpeed(hero) & setRollResuluts(rollResults -1)}/>
                         </div> 
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>stamina: {hero.stats.stamina}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusStamina(hero) & setRollResuluts(rollResults -1)}/> 
                         </div>
-                        <div className='flex width-100 margin-5'>
+                        <div className='flex-align-center width-100 margin-5'>
                             <p>luck: {hero.stats.luck}</p> <HiOutlinePlus className='stat-plus' onClick={() => rollResults > 0 && plusLuck(hero) & setRollResuluts(rollResults -1)}/> 
                         </div>
                     </div>
