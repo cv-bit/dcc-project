@@ -5,6 +5,7 @@ const WizardModal = ({hero, setBuyingMagic}) => {
     
   return (
     <div className='wizard-modal-container flex-center-center column'>
+        <h3>level one spells</h3>
         {
             levelOneMagic.map((magic) => {
                 return <div className='magic-item margin-5'>

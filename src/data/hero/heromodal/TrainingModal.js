@@ -64,7 +64,7 @@ const HeroModal = ({hero, setTraining}) => {
                 </div>
             </div>
             <div>
-                <button className='heromodal-close-btn' onClick={() => setTraining(false) }>close</button>
+                <button className='heromodal-close-btn' onClick={() => setTraining(false) }>leave</button>
                 <button className='heromodal-save-btn' onClick={() => saveHero()} >save hero</button>
             </div>
         </div>
