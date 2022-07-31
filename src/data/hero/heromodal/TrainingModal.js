@@ -14,6 +14,7 @@ const HeroModal = ({hero, setTraining}) => {
     const saveHero = () => {
         hero.stats.xp -= (hero.trainingLevel * 15) - 5
         hero.trainingLevel ++
+        hero.gold -= (hero.trainingLevel * 7) - 2
         hero.powerLevel = (hero.stats.hp + hero.stats.power + hero.stats.magic + hero.stats.speed + hero.stats.stamina )* 5
         localStorage.setItem('hero', JSON.stringify(hero))
         alert('hero saved')
