@@ -1,4 +1,5 @@
 import HeroClass from "./HeroClass";
+import QuestList from "../stories/QuestList";
 
 const HeroOne = new HeroClass()
 
@@ -21,6 +22,7 @@ HeroOne.tempStats = {
     tempStamina: HeroOne.stats.stamina
 }
 HeroOne.powerLevel = (HeroOne.stats.hp + HeroOne.stats.power + HeroOne.stats.magic + HeroOne.stats.speed + HeroOne.stats.stamina) * 5
+HeroOne.quests = [ QuestList[0] ]
 
 const HeroTwo = new HeroClass()
 
@@ -42,8 +44,8 @@ HeroTwo.tempStats = {
     tempSpeed: HeroTwo.stats.speed,
     tempStamina: HeroTwo.stats.stamina
 }
-HeroOne.powerLevel = (HeroOne.stats.hp + HeroOne.stats.power + HeroOne.stats.magic + HeroOne.stats.speed + HeroOne.stats.stamina) * 5
-
+HeroTwo.powerLevel = (HeroTwo.stats.hp + HeroTwo.stats.power + HeroTwo.stats.magic + HeroTwo.stats.speed + HeroTwo.stats.stamina) * 5
+HeroTwo.quests = [ QuestList[0] ]
 
 const HeroThree = new HeroClass()
 
@@ -66,7 +68,7 @@ HeroThree.tempStats = {
     tempStamina: HeroThree.stats.stamina
 }
 HeroThree.powerLevel = (HeroThree.stats.hp + HeroThree.stats.power + HeroThree.stats.magic + HeroThree.stats.speed + HeroThree.stats.stamina) * 5
-
+HeroThree.quests = [ QuestList[0] ]
 
 const HeroFour = new HeroClass()
 
@@ -89,7 +91,7 @@ HeroFour.tempStats = {
     tempStamina: HeroFour.stats.stamina
 }
 HeroFour.powerLevel = (HeroFour.stats.hp + HeroFour.stats.power + HeroFour.stats.magic + HeroFour.stats.speed + HeroFour.stats.stamina) * 5
-
+HeroFour.quests = [ QuestList[0] ]
 
 const HeroFive = new HeroClass()
 
@@ -112,7 +114,7 @@ HeroFive.tempStats = {
     tempStamina: HeroFive.stats.stamina
 }
 HeroFive.powerLevel = (HeroFive.stats.hp + HeroFive.stats.power + HeroFive.stats.magic + HeroFive.stats.speed + HeroFive.stats.stamina) * 5
-
+HeroFive.quests = [ QuestList[0] ]
 
 const HeroSix = new HeroClass()
 
@@ -135,7 +137,7 @@ HeroSix.tempStats = {
     tempStamina: HeroSix.stats.stamina
 }
 HeroSix.powerLevel = (HeroSix.stats.hp + HeroSix.stats.power + HeroSix.stats.magic + HeroSix.stats.speed + HeroSix.stats.stamina) * 5
-
+HeroSix.quests = [ QuestList[0] ]
 
 const HeroList = [
     HeroOne,

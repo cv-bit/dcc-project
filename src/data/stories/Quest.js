@@ -7,7 +7,7 @@ class Quest {
 
     type = ''
 
-    difficulty = ''
+    difficulty = 0
 
     conditions = [
 
@@ -16,6 +16,8 @@ class Quest {
     rewards = [
 
     ]
+
+    value = 0
 
 }
 

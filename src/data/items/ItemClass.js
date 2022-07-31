@@ -10,9 +10,9 @@ class ItemClass {
 
     rarity = ''
 
-    equiped = false
-
-    stats = 0
+    stats = [
+        
+    ]
 }
 
 export default ItemClass

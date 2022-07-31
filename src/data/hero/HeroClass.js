@@ -69,6 +69,8 @@ class HeroClass {
     gold= 0
 
     trainingLevel = 1
+
+    quests = []
 }
 
 export default HeroClass

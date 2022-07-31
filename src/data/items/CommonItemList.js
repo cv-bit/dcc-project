@@ -108,6 +108,22 @@ ItemFourteen.type = 'tool'
 ItemFourteen.rarity = 'common'
 ItemFourteen.value = 2
 
+const ItemFifteen = new ItemClass()
+
+ItemFifteen.name = 'spell book'
+ItemFifteen.type = ''
+ItemFifteen.rarity = 'common'
+ItemFifteen.value = 7
+ItemFifteen.stats = 2
+
+const ItemSixteen = new ItemClass()
+
+ItemSixteen.name = 'blue cloak'
+ItemSixteen.type = 'armor'
+ItemSixteen.rarity = 'common'
+ItemSixteen.value = 6
+ItemSixteen.stats = 1
+
 const CommonItemList = [
     ItemOne,
     ItemTwo,
@@ -123,7 +139,8 @@ const CommonItemList = [
     ItemTwelve,
     ItemThirteen,
     ItemFourteen,
-
+    ItemFifteen,
+    ItemSixteen
 ]
 
 export default CommonItemList
