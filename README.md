@@ -47,6 +47,9 @@ add power levels you can now win xp and gold from enemies and tavern now charges
 day 9 - 10 
 adding equip item functionality
 
+day 10 - 11 
+working on story functionality
+
 Idea
 
 this game will be a text based rpg taking inspiration from DnD and DCC
