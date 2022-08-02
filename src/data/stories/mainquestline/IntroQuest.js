@@ -113,7 +113,7 @@ const introQuestNodes = [
     text: 'You see a small girl in the fields, you also notice something with her as she screams again... Help!!!',
     options: [
         {
-        text: 'Run to help',
+        // text: 'Run to help',
         setState: { enemy: RandomEnemies[0], storyState: 8 },
         nextText: 8
         }

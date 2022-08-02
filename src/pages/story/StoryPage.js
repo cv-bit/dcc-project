@@ -32,7 +32,7 @@ const StoryPage = () => {
     
         textNode.options.forEach(option => {
             setState(option.setState)
-        if (showOption(option)) {
+        if (showOption(option) && option.text !== undefined ) {
             const button = document.createElement('button')
             button.innerText = option.text
             button.classList.add('btn')
