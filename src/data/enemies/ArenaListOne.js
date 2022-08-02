@@ -15,8 +15,9 @@ const EnemyOne = new Enemy()
 EnemyOne.name = 'goblin'
 EnemyOne.img = GoblinImg
 EnemyOne.damage = 1
+EnemyOne.armor = 1
 EnemyOne.stats= {
-    hp: 3,
+    hp: 4,
     power: 1,
     magic: 0,
     speed: 1,
@@ -30,7 +31,7 @@ EnemyOne.tempStats = {
     tempStamina: EnemyOne.stats.stamina
 }
 EnemyOne.description = 'a green monster full of trickery'
-EnemyOne.xp = 1
+EnemyOne.xp = 2
 EnemyOne.gold = 4
 
 const EnemyTwo = new Enemy()
@@ -38,9 +39,10 @@ const EnemyTwo = new Enemy()
 EnemyTwo.name = 'wolf'
 EnemyTwo.img = WolfImg
 EnemyTwo.damage = 1
+EnemyTwo.armor = 0
 EnemyTwo.stats= {
-    hp: 3,
-    power: 1,
+    hp: 4,
+    power: 2,
     magic: 0,
     speed: 1,
     stamina: 5,
@@ -53,16 +55,17 @@ EnemyTwo.tempStats = {
     tempStamina: EnemyTwo.stats.stamina
 }
 EnemyTwo.description = 'hunters of the forest usually hunt in packs'
-EnemyTwo.xp = 1
+EnemyTwo.xp = 2
 
 const EnemyThree = new Enemy()
 
 EnemyThree.name = 'bandit'
 EnemyThree.img = Bandit
 EnemyThree.damage = 2
+EnemyThree.armor = 1
 EnemyThree.stats= {
-    hp: 4,
-    power: 1,
+    hp: 5,
+    power: 2,
     magic: 0,
     speed: 1,
     stamina: 5,
@@ -75,16 +78,18 @@ EnemyThree.tempStats = {
     tempStamina: EnemyThree.stats.stamina
 }
 EnemyThree.description = 'low lifes trying to rob inoccent people they come accross'
-EnemyThree.xp = 2
+EnemyThree.xp = 3
 EnemyThree.gold = 6
+
 const EnemyFour = new Enemy()
 
 EnemyFour.name = 'boar'
 EnemyFour.img = Boar
 EnemyFour.damage = 2
+EnemyFour.armor = 1
 EnemyFour.stats= {
-    hp: 4,
-    power: 1,
+    hp: 5,
+    power: 2,
     magic: 0,
     speed: 1,
     stamina: 5,
@@ -97,13 +102,14 @@ EnemyFour.tempStats = {
     tempStamina: EnemyFour.stats.stamina
 }
 EnemyFour.description = 'wild boars destroy farmers land and will charge at anyone they see'
-EnemyFour.xp = 2
+EnemyFour.xp = 3
 
 const EnemyFive = new Enemy()
 
 EnemyFive.name = 'slime'
 EnemyFive.img = Slime
 EnemyFive.damage = 1
+EnemyFive.armor = 99
 EnemyFive.stats= {
     hp: 1,
     power: 0,
@@ -119,15 +125,16 @@ EnemyFive.tempStats = {
     tempStamina: EnemyFive.stats.stamina
 }
 EnemyFive.description = `slimes are immune to physical attacks and usually have items hidden inside their body`
-EnemyFive.xp = 2
+EnemyFive.xp = 3
 
 const EnemySix = new Enemy()
 
 EnemySix.name = 'skeleton'
 EnemySix.img = Skeleton
 EnemySix.damage = 3
+EnemySix.armor = 2
 EnemySix.stats= {
-    hp: 5,
+    hp: 7,
     power: 1,
     magic: 0,
     speed: 0,
@@ -141,7 +148,7 @@ EnemySix.tempStats = {
     tempStamina: EnemySix.stats.stamina
 }
 EnemySix.description = 'raised from their sleep skeletons are magically created monsters with no soul and will attack all they see'
-EnemySix.xp = 2
+EnemySix.xp = 5
 EnemySix.gold = 6
 // EnemySix.loot = [EasyMonsterLoot[0]]
 
@@ -150,8 +157,9 @@ const EnemySeven = new Enemy()
 EnemySeven.name = 'Drake'
 EnemySeven.img = Drake
 EnemySeven.damage = 4
+EnemySeven.armor = 3
 EnemySeven.stats = {
-    hp: 10,
+    hp: 12,
     power: 5,
     magic: 5,
     speed: 5,
@@ -165,7 +173,7 @@ EnemySeven.tempStats = {
     tempStamina: EnemySeven.stats.stamina
 }
 EnemySeven.description = 'Drake a ferocious draconic creature quick to temper and attack'
-EnemySeven.xp = 5
+EnemySeven.xp = 6
 EnemySeven.gold = 15
 
 const ArenaListOne = [

@@ -20,9 +20,9 @@ const Combat = () => {
     const [hpWidth2, setHpWidth2] = useState((enemy.tempStats.tempHp / enemy.stats.hp))
     
     const Attack = () => {
-        setEnemyDamage(enemyDamage + hero.damage)
-        setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + hero.damage)) / enemy.stats.hp))
-        if(enemyDamage >= enemy.tempStats.tempHp - hero.damage) {
+        hero.damage > enemy.armor && setEnemyDamage((enemyDamage + hero.damage) - enemy.armor)
+        setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + hero.damage) + enemy.armor) / enemy.stats.hp))
+        if(enemyDamage >= (enemy.tempStats.tempHp - hero.damage + enemy.armor)) {
             hero.tempStats.tempHp -= playerDamage
             hero.stats.xp += enemy.xp
             hero.gold += diceRoller(enemy.gold, true)

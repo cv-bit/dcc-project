@@ -13,6 +13,8 @@ class Enemy {
 
     damage = 0
 
+    armor=0
+
     stats = {
         hp: 0,
         power: 0,
