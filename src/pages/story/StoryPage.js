@@ -54,7 +54,7 @@ const StoryPage = () => {
 
     useEffect(() => {
         startGame()
-    }, [quest])
+    }, [quest, startGame])
 
   return (
     <div className='story-container min-width-100 min-height-100 flex-center-center column text-center'>
