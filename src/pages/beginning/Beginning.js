@@ -39,7 +39,7 @@ const Beginning = () => {
         <div className='beginning-story-container  flex-justify-center wrap'>
               {
                 myHero.quests  && myHero.quests.map((quest, key) => {
-                  return <StoryCard quest={quest} key={key}/> 
+                  return <Link to='/story' state={quest} key={key}><StoryCard quest={quest} /></Link> 
                 })
                 
               }

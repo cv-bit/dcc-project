@@ -9,6 +9,7 @@ import Tavern from './pages/tavern/Tavern'
 import Docks from './pages/docks/Docks'
 import Combat from './pages/combat/Combat'
 import Forest from './pages/forest/Forest'
+import StoryPage from './pages/story/StoryPage'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/docks' element={<Docks />} />
         <Route path='/combat' element={<Combat />} />
         <Route path='/forest' element={<Forest />} />
+        <Route path='/story' element={<StoryPage />} />
       </Routes>
     </BrowserRouter>
   );
