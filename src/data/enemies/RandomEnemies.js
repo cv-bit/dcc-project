@@ -20,7 +20,7 @@ Mandragora.tempStats = {
     tempSpeed: Mandragora.stats.speed,
     tempStamina: Mandragora.stats.stamina
 }
-Mandragora.description = 'a green monster full of trickery'
+Mandragora.description = 'a plant brought to life by evil magic'
 Mandragora.xp = 1
 
 const RandomEnemies = [
