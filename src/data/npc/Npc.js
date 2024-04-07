@@ -13,6 +13,8 @@ class NPC  {
 
     ]
 
+    dialogCounter = 0
+
     stats= {
 
     }

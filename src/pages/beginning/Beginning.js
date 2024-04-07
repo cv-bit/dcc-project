@@ -31,6 +31,7 @@ const Beginning = () => {
           </div>
         </div>
         <h3>power level: {myHero && myHero.powerLevel && myHero.powerLevel}</h3>
+        <h4 style={{margin: "5px"}}>Rank: <span style={{color:"var(--secondary-btn-color)"}}>{myHero && myHero.rank && myHero.rank}</span></h4>
         {
           myHero && myHero.name && <div className='flex-justify-center wrap'>
           <HeroCard hero={myHero} /> <HeroInfoCard hero={myHero}/>

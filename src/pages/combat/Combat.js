@@ -63,16 +63,18 @@ const Combat = () => {
                             <Link className='home-btn' to='/beginning'>Flee</Link>
                             <h2>Battle</h2>
                         </div>
-                        <img src={enemy.img} alt="enemy img" className="enemy-img" />
-                        <h2>{enemy.name}</h2>
-                        <p>hp: {enemy.tempStats.tempHp - enemyDamage}/{enemy.stats.hp}</p>
-                        <div className="hp-guage">
-                            <div className="hp-fill" style={{width: hpWidth2 * 100 +"%"}}></div>
+                        <div>
+                            <img src={enemy.img} alt="enemy img" className="enemy-img" />
+                            <h2>{enemy.name}</h2>
+                            <p>hp: {enemy.tempStats.tempHp - enemyDamage}/{enemy.stats.hp}</p>
+                            <div className="hp-guage">
+                                <div className="hp-fill" style={{width: hpWidth2 * 100 +"%"}}></div>
+                            </div>
                         </div>
                     </div>
                 }
             </div>
-            <div className='hero-control-bar flex-align-center column'>
+            <div className='hero-control-bar flex-align-center'>
                 <div className="combat-hero-container flex">
                     <div>
                         <h2>{hero.name}</h2>

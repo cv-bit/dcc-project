@@ -37,6 +37,7 @@ const NewStart = () => {
         <h2>Choose your hero</h2>
         {
           HeroList.map((hero, key) => {
+            console.log(hero)
             return <HeroCard hero={hero} key={key} func={chooseHero} />
           })
         }

@@ -32,6 +32,10 @@ const Guild = () => {
     alert("no one will work with newbs like you come back when you've got some exp under your belt")
   }
 
+  const getSkills = () => {
+    alert("looks like the trainer isn't in yet. Come back later!")
+  }
+
   return (
     <div style={{backgroundImage: `url(${Guildhall})`}} className='guild-container min-width-100 min-height-100 flex-center-center column text-center'>
         <div className='guild-clerk-container '>
@@ -42,6 +46,7 @@ const Guild = () => {
           <div>
             <button className='guild-train-btn' onClick={() => letsTrain()}>Train</button>
             <button className='guild-magic-btn' onClick={() => buyMagic()}>Buy magic</button>
+            <button className='guild-skill-btn' onClick={() => getSkills()}>Buy skills</button>
             <button className='guild-quest-btn' onClick={() => getQuests()}>get quests</button>
             <button className='guild-hire-btn' onClick={() => hire()}>hire a companion</button>
           </div>

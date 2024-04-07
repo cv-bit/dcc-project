@@ -24,6 +24,8 @@ class HeroClass {
 
     powerLevel = 0
 
+    rank = 'F'
+
     armor = 0
 
     damage = 1
@@ -38,6 +40,10 @@ class HeroClass {
 
     skills= [
 
+    ]
+
+    spells= [
+        
     ]
 
     abilities= [

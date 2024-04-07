@@ -34,6 +34,11 @@
     color: var(--primary-text-color);
 }
 
+.guild-skill-btn {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+}
+
 .guild-quest-btn {
     background-color: yellow;
     color: var(--secondary-text-color);

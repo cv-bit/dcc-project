@@ -1,4 +1,4 @@
-class Magic {
+class Skill {
     name = ''
     type = ''
     magic = ''
@@ -9,4 +9,4 @@ class Magic {
     value = 0
 }
 
-export default Magic
+export default Skill
