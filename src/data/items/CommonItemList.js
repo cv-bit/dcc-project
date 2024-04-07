@@ -5,6 +5,7 @@ const ItemOne = new ItemClass()
 ItemOne.name = 'short sword'
 ItemOne.type = 'weapon'
 ItemOne.rarity = 'common'
+ItemOne.loc = 'rightArm'
 ItemOne.value = 6
 ItemOne.stats = 2
 
@@ -12,6 +13,7 @@ const ItemTwo = new ItemClass()
 
 ItemTwo.name = 'bow'
 ItemTwo.type = 'weapon'
+ItemTwo.loc = 'twoHand'
 ItemTwo.rarity = 'common'
 ItemTwo.value = 8
 ItemTwo.stats = 2
@@ -20,6 +22,7 @@ const ItemThree = new ItemClass()
 
 ItemThree.name = 'basic armor'
 ItemThree.type = 'armor'
+ItemThree.loc = 'chest'
 ItemThree.rarity = 'common'
 ItemThree.value = 12
 ItemThree.stats = 1
@@ -36,6 +39,7 @@ const ItemFive = new ItemClass()
 
 ItemFive.name = 'small shield'
 ItemFive.type = 'armor'
+ItemFive.loc = 'leftArm'
 ItemFive.rarity = 'common'
 ItemFive.value = 5
 ItemFive.stats = 1
@@ -44,6 +48,7 @@ const ItemSix = new ItemClass()
 
 ItemSix.name = 'spear'
 ItemSix.type = 'weapon'
+ItemSix.loc = 'twoHand'
 ItemSix.rarity = 'common'
 ItemSix.value = 6
 ItemSix.stats = 2
@@ -52,6 +57,7 @@ const ItemSeven = new ItemClass()
 
 ItemSeven.name = 'sling shot'
 ItemSeven.type = 'weapon'
+ItemSeven.loc = 'twoHand'
 ItemSeven.rarity = 'common'
 ItemSeven.value = 2
 ItemSeven.stats = 1
@@ -82,6 +88,7 @@ const ItemEleven = new ItemClass()
 
 ItemEleven.name = 'dagger'
 ItemEleven.type = 'weapon'
+ItemEleven.loc = 'rightArm'
 ItemEleven.rarity = 'common'
 ItemEleven.value = 2
 ItemEleven.stats = 1
@@ -90,6 +97,7 @@ const ItemTwelve = new ItemClass()
 
 ItemTwelve.name = 'small axe'
 ItemTwelve.type = 'weapon'
+ItemTwelve.loc = 'rightArm'
 ItemTwelve.rarity = 'common'
 ItemTwelve.value = 4
 ItemTwelve.stats = 1
@@ -120,6 +128,7 @@ const ItemSixteen = new ItemClass()
 
 ItemSixteen.name = 'blue cloak'
 ItemSixteen.type = 'armor'
+ItemSixteen.loc = 'back'
 ItemSixteen.rarity = 'common'
 ItemSixteen.value = 6
 ItemSixteen.stats = 1

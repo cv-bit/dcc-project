@@ -13,22 +13,24 @@ const HeroEquipModal = ({hero, setIsEquip}) => {
     const equipItem = (item) => {
         
         if(item.type === 'weapon') {
-            if(hero.equip['weapon']) hero.damage -= hero.equip['weapon'].stats
+            hero.equip.weapon[item.loc].hasOwnProperty('stats') ? hero.damage -= hero.equip.weapon[item.loc].stats : console.log('no equiped item')
             hero.damage += item.stats
-            hero.equip[item.type] = item
+            hero.equip.weapon[item.loc] = item
+            
         }
         if(item.type === 'armor') {
-            hero.armor = item.stats
-            hero.equip[item.type] = item
+            hero.armor += item.stats
+            hero.equip.armor[item.loc] = item
         }
         
         localStorage.setItem('hero', JSON.stringify(hero))
+        console.log(hero)
         alert('hero has equiped the ' + item.name)
         setIsEquip(false)
     }
 
     const unEquipItem = (item) => {
-        hero.equip[item.type] = ''
+        hero.equip[item.type][item.loc] = ''
         if(item.type === 'weapon') {
             hero.damage -= item.stats
         }
@@ -50,8 +52,12 @@ const HeroEquipModal = ({hero, setIsEquip}) => {
             })
         }
         <h3>equiped items</h3>
-        {hero.equip.weapon && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.weapon)}>{hero.equip.weapon.name}</p>}
-        {hero.equip.armor.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.armor)}>{hero.equip.armor.name}</p>}
+        {hero.equip.weapon.rightArm.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.weapon.rightArm)}>{hero.equip.weapon.rightArm.name}</p>}
+        {hero.equip.weapon.leftArm.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.weapon.leftArm)}>{hero.equip.weapon.leftArm.name}</p>}
+        {hero.equip.armor.chest.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.armor.chest)}>{hero.equip.armor.chest.name}</p>}
+        {hero.equip.armor.legs.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.armor.legs)}>{hero.equip.armor.legs.name}</p>}
+        {hero.equip.armor.gloves.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.armor.gloves)}>{hero.equip.armor.gloves.name}</p>}
+        {hero.equip.armor.leftArm.name && <p style={{color: 'blue'}} onClick={() => unEquipItem(hero.equip.armor.leftArm)}>{hero.equip.armor.leftArm.name}</p>}
     </div>
   )
 }

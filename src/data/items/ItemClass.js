@@ -4,6 +4,8 @@ class ItemClass {
 
     type = '' //weapon armor consumeable keyItem, materials for crafting
 
+    loc = ''
+
     description = ''
 
     value = 0

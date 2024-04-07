@@ -53,8 +53,17 @@ class HeroClass {
     equip = {
         belt: '',
         back: '',
-        weapon: '',
-        armor: []
+        weapon: {
+            rightArm: {},
+            leftArm: {},
+            TwoHand: {}
+        },
+        armor: {
+            chest: {},
+            legs: {},
+            gloves: {},
+            leftArm: {}
+        }
     }
 
     inventory = [
