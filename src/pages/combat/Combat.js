@@ -45,13 +45,13 @@ const Combat = () => {
     const Items = () => {
         setIsItemOpen(!isItemOpen)
         let itemList = []
-        // if(hero.items.length < 1) alert('you have no items')
-        // if(hero.items.length > 0) {
-        //     hero.items.forEach(item => {
-        //         itemList.push(item.name)
-        //     });
-        //     alert('items: ' + itemList)
-        // }
+        if(hero.items.length < 1) alert('you have no items')
+        if(hero.items.length > 0) {
+            hero.items.forEach(item => {
+                itemList.push(item.name)
+            });
+            alert('items: ' + itemList)
+        }
     }
 
     const skills = () => {
