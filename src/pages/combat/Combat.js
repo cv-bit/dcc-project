@@ -21,7 +21,7 @@ const Combat = () => {
     
     const Attack = () => {
         hero.damage > enemy.armor && setEnemyDamage((enemyDamage + hero.damage) - enemy.armor)
-        setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + hero.damage) + enemy.armor) / enemy.stats.hp))
+        hero.damage > enemy.armor && setHpWidth2(((enemy.tempStats.tempHp - (enemyDamage + hero.damage) + enemy.armor) / enemy.stats.hp))
         if(enemyDamage >= (enemy.tempStats.tempHp - hero.damage + enemy.armor)) {
             hero.tempStats.tempHp -= playerDamage
             hero.stats.xp += enemy.xp
@@ -30,8 +30,8 @@ const Combat = () => {
             localStorage.setItem('hero', JSON.stringify(hero))
             return window.location.href = '/beginning'
         }
-        setPlayerDamage((playerDamage + enemy.damage) - hero.armor)
-        setHpWidth1(((hero.tempStats.tempHp - (playerDamage + enemy.damage) + hero.armor) / hero.stats.hp))
+        enemy.damage > hero.armor && setPlayerDamage((playerDamage + enemy.damage) - hero.armor)
+        enemy.damage > hero.armor && setHpWidth1(((hero.tempStats.tempHp - (playerDamage + enemy.damage) + hero.armor) / hero.stats.hp))
         if(playerDamage >= hero.tempStats.tempHp - 1) {
             alert('your hero was defeated')
             localStorage.removeItem('hero')
