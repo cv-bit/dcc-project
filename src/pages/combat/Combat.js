@@ -18,6 +18,9 @@ const Combat = () => {
     const [playerDamage, setPlayerDamage] = useState(0)
     const [hpWidth1, setHpWidth1] = useState((hero.tempStats.tempHp / hero.stats.hp))
     const [hpWidth2, setHpWidth2] = useState((enemy.tempStats.tempHp / enemy.stats.hp))
+    const [isItemOpen, setIsItemOpen] = useState(false)
+    const [isMagicOpen, setIsMagicOpen] = useState(false)
+    const [isSkillOpen, setIsSkillOpen] = useState(false)
     
     const Attack = () => {
         hero.damage > enemy.armor && setEnemyDamage((enemyDamage + hero.damage) - enemy.armor)
@@ -40,14 +43,23 @@ const Combat = () => {
     }
 
     const Items = () => {
+        setIsItemOpen(!isItemOpen)
         let itemList = []
-        if(hero.items.length < 1) alert('you have no items')
-        if(hero.items.length > 0) {
-            hero.items.forEach(item => {
-                itemList.push(item.name)
-            });
-            alert('items: ' + itemList)
-        }
+        // if(hero.items.length < 1) alert('you have no items')
+        // if(hero.items.length > 0) {
+        //     hero.items.forEach(item => {
+        //         itemList.push(item.name)
+        //     });
+        //     alert('items: ' + itemList)
+        // }
+    }
+
+    const skills = () => {
+        setIsSkillOpen(!isSkillOpen)
+    }
+
+    const magic = () => {
+        setIsMagicOpen(!isMagicOpen)
     }
 
     useEffect(() => {
@@ -96,14 +108,14 @@ const Combat = () => {
                 </div>
                 <div className="flex-center-center">
                     <div>
-                        <button className="combat-defend-btn">Defend</button>
+                        <button className="combat-defend-btn" onClick={() => skills()}>Skills</button>
                     </div>
                     <div className="flex column">
                         <button className='combat-attack-btn' onClick={() => Attack()}>Attack</button>
                         <button className='combat-item-btn' onClick={() => Items()}>Items</button>
                     </div>
                     <div >
-                        <button className='combat-magic-btn'>Magic</button>
+                        <button className='combat-magic-btn' onClick={() => magic()}>Magic</button>
                     </div>
                 </div>
             </div>

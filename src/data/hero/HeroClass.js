@@ -56,13 +56,14 @@ class HeroClass {
         weapon: {
             rightArm: {},
             leftArm: {},
-            TwoHand: {}
+            twoHand: {}
         },
         armor: {
             chest: {},
             legs: {},
             gloves: {},
-            leftArm: {}
+            leftArm: {},
+            back: {}
         }
     }
 

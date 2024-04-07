@@ -8,12 +8,12 @@ fireBolt.damage = 2
 fireBolt.magic = 1
 fireBolt.value = 10
 
-const shell = new Magic()
-shell.name = 'shell'
-shell.type = 'support'
-shell.stat = 'tempHp'
-shell.magic = 1
-shell.value = 10
+const protect = new Magic()
+protect.name = 'protect'
+protect.type = 'support'
+protect.stat = 'tempHp'
+protect.magic = 1
+protect.value = 10
 
 const heal = new Magic()
 heal.name = 'heal'
@@ -22,18 +22,18 @@ heal.stat = 'hp'
 heal.magic = 1
 heal.value = 10
 
-const charge = new Magic()
-charge.name = 'charge'
-charge.type = 'support'
-charge.stat = 'magic'
-charge.magic = 1
-charge.value = 10
+const attackBoost = new Magic()
+attackBoost.name = 'attack boost'
+attackBoost.type = 'support'
+attackBoost.stat = 'magic'
+attackBoost.magic = 1
+attackBoost.value = 10
 
 const levelOneMagic = [
     fireBolt,
-    shell,
+    protect,
     heal,
-    charge
+    attackBoost
 ]
 
 export default levelOneMagic

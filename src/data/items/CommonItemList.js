@@ -133,6 +133,24 @@ ItemSixteen.rarity = 'common'
 ItemSixteen.value = 6
 ItemSixteen.stats = 1
 
+const ItemSeventeen = new ItemClass()
+
+ItemSeventeen.name = 'leather legs'
+ItemSeventeen.type = 'armor'
+ItemSeventeen.loc = 'legs'
+ItemSeventeen.rarity = 'common'
+ItemSeventeen.value = 5
+ItemSeventeen.stats = 1
+
+const ItemEighteen = new ItemClass()
+
+ItemEighteen.name = 'leather gloves'
+ItemEighteen.type = 'armor'
+ItemEighteen.loc = 'gloves'
+ItemEighteen.rarity = 'common'
+ItemEighteen.value = 3
+ItemEighteen.stats = 1
+
 const CommonItemList = [
     ItemOne,
     ItemTwo,
@@ -149,7 +167,9 @@ const CommonItemList = [
     ItemThirteen,
     ItemFourteen,
     ItemFifteen,
-    ItemSixteen
+    ItemSixteen,
+    ItemSeventeen,
+    ItemEighteen
 ]
 
 export default CommonItemList
